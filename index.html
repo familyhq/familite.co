@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FamilyHQ — The Single Source of Truth for Your Family</title>
+    <meta name="description" content="Stop the 'mental load.' FamilyHQ is the collaborative digital handbook for money, schedules across timezones, and shared family documents." />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-familyhq-orange: #ea580c;
+        --color-familyhq-orange-light: #fed7aa;
+        --font-sans: 'DM Sans', system-ui, sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-sans antialiased text-gray-800 bg-stone-50">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="text-2xl font-bold text-gray-900 tracking-tight text-familyhq-orange transition hover:scale-105">FamilyHQ</a>
+        </div>
+        <div class="flex items-center gap-4 sm:gap-8">
+          <a href="#finance" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Finance</a>
+          <a href="#planning" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Planning</a>
+          <a href="#vault" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Vault</a>
+          <a href="https://app.familyhq.co" class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-familyhq-orange rounded-lg hover:shadow-lg transition">Join Beta</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative pt-16 pb-20 lg:pt-28 lg:pb-36 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-familyhq-orange text-xs font-bold uppercase tracking-wider mb-6">
+          Early-Access Beta for Modern Families
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-bold text-gray-900 tracking-tight mb-6 leading-tight">
+          Stop the Family Chaos. <br class="hidden sm:block" />
+          <span class="text-familyhq-orange italic">Start the Command Center.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
+          The collaborative digital handbook designed to manage the practical details of home life—money, dates, and documents—in one shared space. Built for distributed families across locations and timezones.
+        </p>
+        <a href="https://app.familyhq.co" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-familyhq-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-200">
+          Build Your Family Handbook — Free
+        </a>
+        
+        <div class="mt-16 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-transparent z-10"></div>
+          <div class="rounded-2xl border border-gray-200 shadow-2xl overflow-hidden bg-white max-w-5xl mx-auto transition-transform hover:scale-[1.01]">
+            <img src="assets/dashboard_main.png" alt="FamilyHQ Dashboard" class="w-full h-auto" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-20 bg-white border-y border-gray-100">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 italic">One place for your family. Finally.</h2>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="p-8 rounded-2xl bg-stone-50 border border-gray-100">
+            <h3 class="font-bold text-red-600 mb-4">The "Mental Load"</h3>
+            <ul class="space-y-3 text-gray-600 text-sm">
+              <li>• Texting "Where is the nanny's number?".</li>
+              <li>• Manual timezone math for family calls.</li>
+              <li>• Digging through emails for bank PDFs.</li>
+              <li>• Losing track of visa expiration dates.</li>
+            </ul>
+          </div>
+          <div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 shadow-sm">
+            <h3 class="font-bold text-familyhq-orange mb-4">The FamilyHQ Way</h3>
+            <ul class="space-y-3 text-gray-700 text-sm">
+              <li>• A permanent "Wiki" for every detail.</li>
+              <li>• Live, timezone-aware event syncing.</li>
+              <li>• AI-powered transaction parsing.</li>
+              <li>• Automated travel & document alerts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="finance" class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div class="lg:sticky lg:top-32">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-familyhq-orange text-xs font-bold uppercase mb-4 tracking-wider">Finance</div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">Smart Money Management. <br/>Zero Manual Entry.</h2>
+            <p class="text-lg text-gray-600 mb-8">Upload bank statements and let our engine do the work. You stay in control with a simple verification wizard.</p>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="mt-1 bg-familyhq-orange rounded-full p-1"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Smart Parsing & Review</h4>
+                  <p class="text-gray-600 text-sm">Upload PDF/CSV via the dashboard; our engine extracts draft transactions for you to confirm and categorize.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="mt-1 bg-familyhq-orange rounded-full p-1"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Multi-Currency Native</h4>
+                  <p class="text-gray-600 text-sm">Set a household base currency (like EUR) while tracking local expenses (like IDR) with automatic conversions.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6 overflow-hidden">
+            <img src="assets/money_multi_currency.png" alt="Multi-currency finances" class="w-full h-auto max-w-full rounded-2xl shadow-xl border border-gray-100" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img src="assets/import_transactions.png" alt="Import data" class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100" />
+              <img src="assets/review_transaction.png" alt="Review flow" class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="py-24 bg-stone-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 overflow-hidden">
+            <img src="assets/calendar_main.png" alt="Family Calendar" class="w-full h-auto max-w-full rounded-2xl shadow-2xl border border-gray-100" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs font-bold uppercase mb-4 tracking-wider">Planning</div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Coordination Across Borders.</h2>
+            <p class="text-lg text-gray-600 mb-8">Finally, a calendar that speaks your timezone. Events adjust automatically so everyone knows the real time to join.</p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="mt-1 bg-blue-500 rounded-full p-1"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-gray-700 font-medium">Google Calendar Sync</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-1 bg-blue-500 rounded-full p-1"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-gray-700 font-medium">Smart Scheduler for Distributed Families</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-1 bg-blue-500 rounded-full p-1"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-gray-700 font-medium">Birthday Hub with Shared Gift Ideas</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vault" class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase mb-4 tracking-wider">The Vault</div>
+          <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">Your Single Source of Truth.</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Reclaim the hours spent looking for what matters. The Vault connects your family to essential documents and shared knowledge.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">The Family Wiki</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Store critical info everyone asks for: WiFi passwords, the Nanny's contact, or the exact brand of milk the kids like.</p>
+          </div>
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">Storage-Agnostic Map</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Keep your data where you want it. Reference existing links in Google Drive or iCloud, or upload directly to our secure storage.</p>
+          </div>
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">Document Hub</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Track visa expiration dates, passports, and shared itineraries. Filter by category and stay ahead of the paperwork.</p>
+          </div>
+        </div>
+        <img src="assets/vault_main.png" alt="The Family Vault" class="w-full h-auto max-w-5xl mx-auto rounded-2xl shadow-2xl border border-gray-100" />
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-900 text-white overflow-hidden relative">
+      <div class="absolute top-0 right-0 -mt-24 -mr-24 w-96 h-96 bg-familyhq-orange opacity-10 rounded-full blur-3xl"></div>
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 italic">Privacy by Design. Peace of Mind by Choice.</h2>
+        <p class="text-lg text-gray-400 mb-12">FamilyHQ uses world-class infrastructure to ensure your household data remains family-scoped and locked away from the rest of the world.</p>
+        <div class="grid sm:grid-cols-2 gap-12 text-left">
+          <div class="border-l-2 border-familyhq-orange pl-6">
+            <h4 class="font-bold text-xl mb-3">You Control Who Sees What</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Decide exactly who can see the household finances vs. who just needs to find the guest room gate key. Granular sharing keeps private details private.</p>
+          </div>
+          <div class="border-l-2 border-familyhq-orange pl-6">
+            <h4 class="font-bold text-xl mb-3">Your Data, Your Property</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">We don't hold your information hostage. You own every record, link, and document. If you ever decide to leave, your family handbook goes with you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-stone-50 relative overflow-hidden text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10">
+        <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">Reclaim your mental space. <br />Join the Founding Families.</h2>
+        <p class="text-lg text-gray-600 mb-10 leading-relaxed">We are currently in a closed beta, working with our first 50 families to build the ultimate household command center.</p>
+        <a href="https://app.familyhq.co" class="inline-flex items-center justify-center px-10 py-5 text-xl font-semibold text-white bg-familyhq-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-900">
+          Get Early Access — Free
+        </a>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="text-xl font-bold text-white hover:text-familyhq-orange transition">FamilyHQ</a>
+          <span class="text-xs text-gray-500">© 2026</span>
+        </div>
+        <div class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+          <a href="terms.html" class="hover:text-white transition">Terms</a>
+          <a href="https://app.familyhq.co" class="text-white font-semibold hover:text-familyhq-orange transition">Open App</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

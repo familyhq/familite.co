@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy & Security — FamilyHQ</title>
+    <meta name="description" content="Transparency first. Learn how FamilyHQ protects your family's data, money, and documents." />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-familyhq-orange: #ea580c;
+        --color-familyhq-orange-light: #fed7aa;
+        --font-sans: 'DM Sans', system-ui, sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-sans antialiased text-gray-800 bg-stone-50">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-0">
+        <div class="flex items-center">
+          <a href="index.html" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight text-familyhq-orange">FamilyHQ</a>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-4 lg:gap-8 text-xs sm:text-sm flex-wrap">
+          <a href="index.html" class="text-gray-500 hover:text-gray-900 transition">Home</a>
+          <a href="about.html" class="text-gray-500 hover:text-gray-900 transition">About</a>
+          <a href="privacy.html" class="text-gray-500 hover:text-gray-900 transition">Privacy</a>
+          <a href="terms.html" class="text-gray-500 hover:text-gray-900 transition">Terms</a>
+          <a href="https://app.familyhq.co" class="ml-auto inline-flex items-center justify-center px-4 py-2 font-semibold text-white bg-familyhq-orange rounded-lg hover:shadow-lg transition">Open App</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+      <header class="mb-10 sm:mb-16">
+        <p class="text-xs sm:text-sm font-bold text-familyhq-orange uppercase tracking-widest mb-2">Transparency First</p>
+        <h1 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Privacy & Security</h1>
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+          At FamilyHQ, we believe your family's data belongs to you. This policy outlines how we protect your information and—more importantly—what we <strong>don't</strong> do with it.
+        </p>
+        <div class="mt-4 p-4 bg-orange-50 rounded-lg border border-orange-100 text-xs text-gray-500 italic">
+            First Created: March 2026 | Last Updated: March 2026
+        </div>
+      </header>
+
+      <section class="mb-12 sm:mb-20 bg-white p-4 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+        <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">The "Too Long; Didn't Read" Summary</h2>
+        <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">🚫</div>
+            <div>
+              <p class="font-bold text-gray-900">We don't sell data.</p>
+              <p class="text-sm text-gray-600">Your bank statements, passwords, and schedules are never for sale.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">🕵️‍♂️</div>
+            <div>
+              <p class="font-bold text-gray-900">We don't "browse" your files.</p>
+              <p class="text-sm text-gray-600">If you link a Google Drive file, we store the link, not the file's contents.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">🔒</div>
+            <div>
+              <p class="font-bold text-gray-900">You control visibility.</p>
+              <p class="text-sm text-gray-600">Use Role-Based Access to hide finances from children or guests.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">📦</div>
+            <div>
+              <p class="font-bold text-gray-900">No Lock-In.</p>
+              <p class="text-sm text-gray-600">Your family handbook stays with you. You own every link and record.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="space-y-10 sm:space-y-16">
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">What we collect (and why)</h3>
+          <p class="text-gray-600 mb-6">To provide your Family Command Center, we process a few key types of information:</p>
+          <div class="space-y-6">
+            <div class="border-l-4 border-orange-100 pl-6">
+              <h4 class="font-bold text-gray-900">1. Account & Identity</h4>
+              <p class="text-gray-600 text-sm">We use <strong>Supabase Auth</strong> for secure sign-in. We store your name and email to manage your membership in your Family Workspace.</p>
+            </div>
+            <div class="border-l-4 border-orange-100 pl-6">
+              <h4 class="font-bold text-gray-900">2. Financial Statements (Money)</h4>
+              <p class="text-gray-600 text-sm">When you upload a bank statement (PDF/CSV), we store it in <strong>Google Cloud Storage (GCP)</strong> exclusively for parsing. Once the transactions are extracted, you choose which ones to save to your ledger.</p>
+            </div>
+            <div class="border-l-4 border-orange-100 pl-6">
+              <h4 class="font-bold text-gray-900">3. The Vault (Documents & Links)</h4>
+              <p class="text-gray-600 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it in our secure backend. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Who can see your data?</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            FamilyHQ is a shared space, but not everyone needs to see everything. We use <strong>Role-Based Access Control (RBAC)</strong> to let you decide who sees what.
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 text-sm space-y-3">
+            <li><strong>Admins:</strong> Have full control over finances, vault items, and settings.</li>
+            <li><strong>Members:</strong> Can typically see planning and vault items but may have restricted access to finances.</li>
+            <li><strong>Children/Guests:</strong> Parents can connect children's calendars (like school schedules) for visibility without giving the child access to parent-level finances.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">How we keep it safe</h3>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            We use industry-standard encryption and security infrastructure to protect your household.
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 text-sm space-y-2">
+            <li><strong>Secure Auth:</strong> We never see your Google password; sign-in is handled securely via Google OAuth.</li>
+            <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our Go-backend is validated with secure JWT tokens.</li>
+            <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
+          </ul>
+        </section>
+
+        <section class="p-4 sm:p-8 rounded-2xl bg-gray-900 text-white">
+          <h3 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Still have questions?</h3>
+          <p class="text-gray-400 text-sm mb-4 sm:mb-6 leading-relaxed">
+            We are a small team dedicated to helping families. If you have any concerns about how your data is handled, we want to hear from you.
+          </p>
+          <a href="mailto:privacy@familyhq.co" class="inline-block px-6 py-3 bg-familyhq-orange font-bold rounded-lg hover:scale-105 transition">Email our Privacy Team</a>
+          <p class="mt-6 text-xs text-gray-500">privacy@familyhq.co | Responding as required by law.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="text-xl font-bold text-white hover:text-familyhq-orange transition">FamilyHQ</a>
+          <span class="text-xs text-gray-500">© 2026</span>
+        </div>
+        <div class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+          <a href="terms.html" class="hover:text-white transition">Terms</a>
+          <a href="https://app.familyhq.co" class="text-white font-semibold hover:text-familyhq-orange transition">Open App</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
