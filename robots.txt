@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://familite.co/sitemap.xml
