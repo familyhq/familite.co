@@ -70,9 +70,9 @@
       gtag("config", "G-DEE1FN249J");
     </script>
   </head>
-  <body class="font-sans antialiased text-gray-800 bg-stone-50">
+  <body class="font-sans antialiased text-gray-800 bg-stone-50 dark:bg-gray-900 dark:text-gray-200">
     <nav
-      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100"
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 dark:bg-gray-900/90 dark:border-gray-800"
     >
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
@@ -81,28 +81,28 @@
           <a
             href="index.html"
             class="text-2xl font-bold tracking-tight text-brand-orange transition hover:scale-105"
-            >familite<span class="text-gray-900">.co</span></a
+            >familite<span class="text-gray-900 dark:text-white">.co</span></a
           >
         </div>
         <div class="flex items-center gap-4 sm:gap-8">
           <a
             href="#finance"
-            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
             >Finance</a
           >
           <a
             href="#planning"
-            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
             >Planning</a
           >
           <a
             href="#vault"
-            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
             >Vault</a
           >
           <a
             href="https://app.familite.co"
-            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:shadow-lg transition"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:shadow-lg dark:shadow-orange-500/20 transition"
             >Join Beta</a
           >
         </div>
@@ -112,12 +112,12 @@
     <header class="relative pt-12 pb-14 sm:pt-16 sm:pb-20 lg:pt-28 lg:pb-36 overflow-hidden">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div
-          class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6"
+          class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange dark:bg-orange-900/50 dark:text-orange-300 text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6"
         >
           Early-Access Beta for Modern Families
         </div>
         <h1
-          class="text-2xl sm:text-4xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-4 sm:mb-6 leading-tight"
+          class="text-2xl sm:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight mb-4 sm:mb-6 leading-tight"
         >
           Family life is heavy.<br />
           <span class="text-brand-orange italic"
@@ -125,7 +125,7 @@
           >
         </h1>
         <p
-          class="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-10 leading-relaxed"
+          class="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-10 leading-relaxed"
         >
           The collaborative digital space designed to offload the practical
           details of home life—money, dates, and documents. Built for distributed 
@@ -133,17 +133,18 @@
         </p>
         <a
           href="https://app.familite.co"
-          class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-200"
+          class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-200 dark:shadow-orange-500/20"
         >
           Build Your Family Space — Free
         </a>
 
         <div class="mt-16 relative">
+          <!-- Gradient only in light mode; dark mode uses uniform background -->
           <div
-            class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-transparent z-10"
+            class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-transparent z-10 dark:opacity-0"
           ></div>
           <div
-            class="rounded-2xl border border-gray-200 shadow-2xl overflow-hidden bg-white max-w-5xl mx-auto transition-transform hover:scale-[1.01]"
+            class="rounded-2xl border border-gray-200 dark:border-gray-700 shadow-2xl overflow-hidden bg-white dark:bg-gray-800 max-w-5xl mx-auto transition-transform hover:scale-[1.01]"
           >
             <img
               src="assets/dashboard_main.png"
@@ -156,15 +157,15 @@
       </div>
     </header>
 
-    <section class="py-20 bg-white border-y border-gray-100">
+    <section class="py-20 bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-12 italic">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 italic">
           One space for your family. Finally.
         </h2>
         <div class="grid md:grid-cols-2 gap-8 text-left">
-          <div class="p-8 rounded-2xl bg-stone-50 border border-gray-100">
-            <h3 class="font-bold text-red-600 mb-4">The "Mental Load"</h3>
-            <ul class="space-y-3 text-gray-600 text-sm">
+          <div class="p-8 rounded-2xl bg-stone-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
+            <h3 class="font-bold text-red-600 dark:text-red-400 mb-4">The "Mental Load"</h3>
+            <ul class="space-y-3 text-gray-600 dark:text-gray-300 text-sm">
               <li>• Texting "Where is the nanny's number?".</li>
               <li>• Manual timezone math for family calls.</li>
               <li>• Digging through emails for bank PDFs.</li>
@@ -172,12 +173,12 @@
             </ul>
           </div>
           <div
-            class="p-8 rounded-2xl bg-orange-50 border border-orange-100 shadow-sm"
+            class="p-8 rounded-2xl bg-orange-50 dark:bg-orange-900/30 border border-orange-100 dark:border-orange-800/50 shadow-sm"
           >
-            <h3 class="font-bold text-brand-orange mb-4">
+            <h3 class="font-bold text-brand-orange dark:text-orange-300 mb-4">
               The Familite Way
             </h3>
-            <ul class="space-y-3 text-gray-700 text-sm">
+            <ul class="space-y-3 text-gray-700 dark:text-gray-400 text-sm">
               <li>• A permanent "Wiki" for every detail.</li>
               <li>• Live, timezone-aware event syncing.</li>
               <li>• AI-powered transaction parsing.</li>
@@ -188,21 +189,21 @@
       </div>
     </section>
 
-    <section id="finance" class="py-24 bg-white">
+    <section id="finance" class="py-24 bg-white dark:bg-gray-900">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-start">
           <div class="lg:sticky lg:top-32">
             <div
-              class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange text-xs font-bold uppercase mb-4 tracking-wider"
+              class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange dark:bg-orange-900/50 dark:text-orange-300 text-xs font-bold uppercase mb-4 tracking-wider"
             >
               Finance
             </div>
             <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight"
+              class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight"
             >
               Smart Money Management. <br />Zero Manual Entry.
             </h2>
-            <p class="text-lg text-gray-600 mb-8">
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Upload bank statements and let Familite do the work. You stay in
               control with a simple verification wizard.
             </p>
@@ -224,10 +225,10 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-gray-900">
+                  <h4 class="font-bold text-gray-900 dark:text-white">
                     Smart Parsing & Review
                   </h4>
-                  <p class="text-gray-600 text-sm">
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
                     Upload PDF; our engine extracts draft
                     transactions for you to confirm and categorize.
                   </p>
@@ -250,8 +251,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-gray-900">Multi-Currency Native</h4>
-                  <p class="text-gray-600 text-sm">
+                  <h4 class="font-bold text-gray-900 dark:text-white">Multi-Currency Native</h4>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
                     Set a household base currency (like EUR) while tracking
                     local expenses (like IDR) with automatic conversions.
                   </p>
@@ -263,18 +264,18 @@
             <img
               src="assets/money_multi_currency.png"
               alt="Multi-currency finances"
-              class="w-full h-auto max-w-full rounded-2xl shadow-xl border border-gray-100"
+              class="w-full h-auto max-w-full rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 dark:bg-gray-800"
             />
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <img
                 src="assets/import_transactions.png"
                 alt="Import data"
-                class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100"
+                class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100 dark:border-gray-700"
               />
               <img
                 src="assets/review_transaction.png"
                 alt="Review flow"
-                class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100"
+                class="w-full h-auto max-w-full rounded-xl shadow-md border border-gray-100 dark:border-gray-700"
               />
             </div>
           </div>
@@ -282,26 +283,26 @@
       </div>
     </section>
 
-    <section id="planning" class="py-24 bg-stone-50">
+    <section id="planning" class="py-24 bg-stone-50 dark:bg-gray-800/50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="order-2 lg:order-1 overflow-hidden">
             <img
               src="assets/calendar_main.png"
               alt="Family Calendar"
-              class="w-full h-auto max-w-full rounded-2xl shadow-2xl border border-gray-100"
+              class="w-full h-auto max-w-full rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 dark:bg-gray-800"
             />
           </div>
           <div class="order-1 lg:order-2">
             <div
-              class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs font-bold uppercase mb-4 tracking-wider"
+              class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/50 dark:text-blue-300 text-xs font-bold uppercase mb-4 tracking-wider"
             >
               Planning
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Coordination Across Borders.
             </h2>
-            <p class="text-lg text-gray-600 mb-8">
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Finally, a calendar that speaks your timezone. Events adjust
               automatically so everyone knows the real time to join.
             </p>
@@ -322,7 +323,7 @@
                     ></path>
                   </svg>
                 </div>
-                <p class="text-gray-700 font-medium">Google Calendar Sync</p>
+                <p class="text-gray-700 dark:text-gray-400 font-medium">Google Calendar Sync</p>
               </li>
               <li class="flex items-start gap-3">
                 <div class="mt-1 bg-blue-500 rounded-full p-1">
@@ -340,7 +341,7 @@
                     ></path>
                   </svg>
                 </div>
-                <p class="text-gray-700 font-medium">
+                <p class="text-gray-700 dark:text-gray-400 font-medium">
                   Smart Scheduler for Distributed Families
                 </p>
               </li>
@@ -360,7 +361,7 @@
                     ></path>
                   </svg>
                 </div>
-                <p class="text-gray-700 font-medium">
+                <p class="text-gray-700 dark:text-gray-400 font-medium">
                   Birthday Hub with Shared Gift Ideas
                 </p>
               </li>
@@ -370,48 +371,48 @@
       </div>
     </section>
 
-    <section id="vault" class="py-24 bg-white">
+    <section id="vault" class="py-24 bg-white dark:bg-gray-900">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <div
-            class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase mb-4 tracking-wider"
+            class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300 text-xs font-bold uppercase mb-4 tracking-wider"
           >
             The Vault
           </div>
           <h2
-            class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+            class="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight"
           >
             Your Single Source of Truth.
           </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Reclaim the hours spent looking for what matters. The Vault connects
             your family to essential documents and shared knowledge.
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8 mb-16">
           <div
-            class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md"
+            class="bg-stone-50 dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 transition-shadow hover:shadow-md"
           >
-            <h4 class="font-bold text-gray-900 mb-3">The Family Wiki</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-3">The Family Wiki</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
               Store critical info everyone asks for: WiFi passwords, the Nanny's
               contact, or the exact brand of milk the kids like.
             </p>
           </div>
           <div
-            class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md"
+            class="bg-stone-50 dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 transition-shadow hover:shadow-md"
           >
-            <h4 class="font-bold text-gray-900 mb-3">Storage-Agnostic Map</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-3">Storage-Agnostic Map</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
               Keep your data where you want it. Reference existing links in
               Google Drive or iCloud, or upload directly to Familite.
             </p>
           </div>
           <div
-            class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md"
+            class="bg-stone-50 dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 transition-shadow hover:shadow-md"
           >
-            <h4 class="font-bold text-gray-900 mb-3">Document Hub</h4>
-            <p class="text-sm text-gray-600 leading-relaxed">
+            <h4 class="font-bold text-gray-900 dark:text-white mb-3">Document Hub</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
               Track visa expiration dates, passports, and shared itineraries.
               Filter by category and stay ahead of the paperwork.
             </p>
@@ -420,7 +421,7 @@
         <img
           src="assets/vault_main.png"
           alt="The Familite Vault"
-          class="w-full h-auto max-w-5xl mx-auto rounded-2xl shadow-2xl border border-gray-100"
+          class="w-full h-auto max-w-5xl mx-auto rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 dark:bg-gray-800"
         />
       </div>
     </section>
@@ -458,20 +459,20 @@
       </div>
     </section>
 
-    <section class="py-24 bg-stone-50 relative overflow-hidden text-center">
+    <section class="py-24 bg-stone-50 dark:bg-gray-800/50 relative overflow-hidden text-center">
       <div class="max-w-4xl mx-auto px-4 relative z-10">
         <h2
-          class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight tracking-tight"
+          class="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight tracking-tight"
         >
           Reclaim your mental space. <br />Join the Founding Families.
         </h2>
-        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-10 leading-relaxed">
           We are currently in a closed beta, working with our first 50 families
           to build the ultimate household space.
         </p>
         <a
           href="https://app.familite.co"
-          class="inline-flex items-center justify-center px-10 py-5 text-xl font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-900"
+          class="inline-flex items-center justify-center px-10 py-5 text-xl font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-900 dark:shadow-orange-500/20"
         >
           Get Early Access — Free
         </a>
@@ -485,7 +486,7 @@
         <div class="flex items-center gap-2">
           <a
             href="index.html"
-            class="text-xl font-bold text-white hover:text-brand-orange transition"
+            class="text-xl font-bold text-white hover:text-brand-orange dark:hover:text-brand-orange transition"
             >familite.co</a
           >
           <span class="text-xs text-gray-500">© 2026</span>
@@ -493,10 +494,10 @@
         <div
           class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8"
         >
-          <a href="index.html" class="hover:text-white transition">Home</a>
-          <a href="about.html" class="hover:text-white transition">About</a>
-          <a href="privacy.html" class="hover:text-white transition">Privacy</a>
-          <a href="terms.html" class="hover:text-white transition">Terms</a>
+          <a href="index.html" class="hover:text-white dark:hover:text-white transition">Home</a>
+          <a href="about.html" class="hover:text-white dark:hover:text-white transition">About</a>
+          <a href="privacy.html" class="hover:text-white dark:hover:text-white transition">Privacy</a>
+          <a href="terms.html" class="hover:text-white dark:hover:text-white transition">Terms</a>
           <a
             href="https://app.familite.co"
             class="text-white font-semibold hover:text-brand-orange transition"
