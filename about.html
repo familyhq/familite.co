@@ -1,69 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Mission — FamilyHQ | Reclaiming the Family Headspace</title>
-    <meta name="description" content="Learn why we built FamilyHQ. We are on a mission to reduce the mental load for modern, distributed families through a single source of truth." />
-    
+    <title>Our Mission — familite.co | Family Life, Simplified.</title>
+    <meta
+      name="description"
+      content="Learn why we built familite.co. We are on a mission to reduce the mental load for modern, distributed families through a single source of truth."
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-familyhq-orange: #ea580c;
-        --color-familyhq-orange-light: #fed7aa;
-        --font-sans: 'DM Sans', system-ui, sans-serif;
+        --color-brand-orange: #ea580c;
+        --color-brand-orange-light: #fed7aa;
+        --font-sans: "DM Sans", system-ui, sans-serif;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;0,700&display=swap" rel="stylesheet" />
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3e4f5dfa-ffc5-466e-99ab-bbc910466548" type="text/javascript" async></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="3e4f5dfa-ffc5-466e-99ab-bbc910466548"
+      type="text/javascript"
+      async
+    ></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEE1FN249J"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DEE1FN249J"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-DEE1FN249J');
+      gtag("config", "G-DEE1FN249J");
     </script>
   </head>
   <body class="font-sans antialiased text-gray-800 bg-stone-50">
-
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-0">
-        <div class="flex items-center">
-          <a href="index.html" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight text-familyhq-orange">FamilyHQ</a>
+    <nav
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <a
+            href="index.html"
+            class="text-2xl font-bold tracking-tight text-brand-orange transition hover:scale-105"
+            >familite<span class="text-gray-900">.co</span></a
+          >
         </div>
-        <div class="flex items-center gap-2 sm:gap-4 lg:gap-8 text-xs sm:text-sm flex-wrap">
-          <a href="index.html" class="text-gray-500 hover:text-gray-900 transition">Home</a>
-          <a href="about.html" class="text-gray-500 hover:text-gray-900 transition">About</a>
-          <a href="privacy.html" class="text-gray-500 hover:text-gray-900 transition">Privacy</a>
-          <a href="terms.html" class="text-gray-500 hover:text-gray-900 transition">Terms</a>
-          <a href="https://app.familyhq.co" class="ml-auto inline-flex items-center justify-center px-4 py-2 font-semibold text-white bg-familyhq-orange rounded-lg hover:shadow-lg transition">Open App</a>
+        <div class="flex items-center gap-4 sm:gap-8">
+          <a
+            href="index.html"
+            class="text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            >About</a
+          >
+          <a
+            href="privacy.html"
+            class="text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            >Privacy</a
+          >
+          <a
+            href="terms.html"
+            class="text-sm font-medium text-gray-500 hover:text-gray-900 transition"
+            >Terms</a
+          >
+          <a
+            href="https://app.familite.co"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:shadow-lg transition"
+            >Open App</a
+          >
         </div>
       </div>
     </nav>
 
     <header class="py-12 sm:py-20 lg:py-32 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6 sm:mb-8">
-          We believe the "Mental Load" shouldn't be a <span class="text-familyhq-orange">solo journey.</span>
+        <h1
+          class="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6 sm:mb-8"
+        >
+          We believe the "Mental Load" shouldn't be a
+          <span class="text-brand-orange">solo journey.</span>
         </h1>
-        <p class="text-base sm:text-xl text-gray-600 leading-relaxed italic border-l-4 border-orange-100 pl-4 sm:pl-6">
-          "FamilyHQ was born from a simple realization: modern life is distributed, but our family information is fragmented. We didn't need another app; we needed a headquarters."
+        <p
+          class="text-base sm:text-xl text-gray-600 leading-relaxed italic border-l-4 border-orange-100 pl-4 sm:pl-6"
+        >
+          "familite.co was born from a simple realization: modern life is
+          distributed, but our family information is fragmented. We didn't need
+          another app; we needed one place for it all."
         </p>
       </div>
     </header>
 
     <section class="py-12 sm:py-20">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 leading-relaxed text-base sm:text-lg text-gray-700 space-y-6 sm:space-y-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">The Problem We're Solving</h2>
+      <div
+        class="max-w-4xl mx-auto px-4 sm:px-6 leading-relaxed text-base sm:text-lg text-gray-700 space-y-6 sm:space-y-8"
+      >
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+          The Problem We're Solving
+        </h2>
         <p>
-          Most families manage their lives through a chaotic mix of WhatsApp threads, sticky notes, and private calendar entries. This creates an invisible burden—the <strong>Mental Load</strong>—that usually falls on one person.
+          Most families manage their lives through a chaotic mix of WhatsApp
+          threads, sticky notes, and private calendar entries. This creates an
+          invisible burden—the <strong>Mental Load</strong>—that usually falls
+          on one person.
         </p>
         <p>
-          For families living across timezones or managing multiple household locations, this chaos is amplified. Whether it's "What time is the flight in my time?" or "Where is the gate key code?", the constant back-and-forth drains our most precious resource: <strong>family time.</strong>
+          For families living across timezones or managing multiple household
+          locations, this chaos is amplified. Whether it's "What time is the
+          flight in my time?" or "Where is the gate key code?", the constant
+          back-and-forth drains our most precious resource:
+          <strong>family time.</strong>
         </p>
       </div>
     </section>
@@ -71,25 +133,41 @@
     <section class="py-12 sm:py-20 bg-orange-50/50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10 sm:mb-16">
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Our Core Philosophy</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+            Our Core Philosophy
+          </h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8 sm:gap-12">
           <div>
-            <h3 class="font-bold text-xl text-gray-900 mb-4">A Single Source of Truth</h3>
+            <h3 class="font-bold text-xl text-gray-900 mb-4">
+              A Single Source of Truth
+            </h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              FamilyHQ is designed as a collaborative digital handbook. It’s one shared space where money, dates, and routines live together—accessible to everyone who needs them, whenever they need them.
+              familite.co is designed as a collaborative digital handbook. It’s one
+              shared space where money, dates, and routines live
+              together—accessible to everyone who needs them, whenever they need
+              them.
             </p>
           </div>
           <div>
-            <h3 class="font-bold text-xl text-gray-900 mb-4">Storage-Agnostic Freedom</h3>
+            <h3 class="font-bold text-xl text-gray-900 mb-4">
+              Storage-Agnostic Freedom
+            </h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              We don't want to lock your data in a proprietary silo. Whether you use Google Drive, iCloud, or Dropbox, FamilyHQ acts as the universal reference layer that connects your family to your existing documents.
+              We don't want to lock your data in a proprietary silo. Whether you
+              use Google Drive, iCloud, or Dropbox, familite.co acts as the
+              universal reference layer that connects your family to your
+              existing documents.
             </p>
           </div>
           <div>
-            <h3 class="font-bold text-xl text-gray-900 mb-4">Privacy as a Right</h3>
+            <h3 class="font-bold text-xl text-gray-900 mb-4">
+              Privacy as a Right
+            </h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Family life is private. We use industry-standard security and granular role-based access to ensure that sensitive data like bank balances are only seen by the right people.
+              Family life is private. We use industry-standard security and
+              granular role-based access to ensure that sensitive data like bank
+              balances are only seen by the right people.
             </p>
           </div>
         </div>
@@ -98,51 +176,94 @@
 
     <section class="py-12 sm:py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Built for Every Member</h2>
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center"
+        >
+          Built for Every Member
+        </h2>
         <div class="grid sm:grid-cols-2 gap-6 sm:gap-12">
-          <div class="p-5 sm:p-8 rounded-2xl border border-gray-100 bg-stone-50">
-            <h4 class="font-bold text-familyhq-orange mb-2 text-lg sm:text-xl italic text-shadow-sm">The Organizer</h4>
+          <div
+            class="p-5 sm:p-8 rounded-2xl border border-gray-100 bg-stone-50"
+          >
+            <h4
+              class="font-bold text-brand-orange mb-2 text-lg sm:text-xl italic text-shadow-sm"
+            >
+              The Organizer
+            </h4>
             <p class="text-gray-600 text-sm leading-relaxed">
-              The "Household COO." You're the one who keeps the wheels turning, uploads the bills, and sets the reminders. We give you the automation (like PDF parsing) to stop the manual admin and start leading.
+              The "Household COO." You're the one who keeps the wheels turning,
+              uploads the bills, and sets the reminders. We give you the
+              automation (like PDF parsing) to stop the manual admin and start
+              leading.
             </p>
           </div>
-          <div class="p-5 sm:p-8 rounded-2xl border border-gray-100 bg-stone-50">
-            <h4 class="font-bold text-familyhq-orange mb-2 text-lg sm:text-xl italic text-shadow-sm">The Participant</h4>
+          <div
+            class="p-5 sm:p-8 rounded-2xl border border-gray-100 bg-stone-50"
+          >
+            <h4
+              class="font-bold text-brand-orange mb-2 text-lg sm:text-xl italic text-shadow-sm"
+            >
+              The Participant
+            </h4>
             <p class="text-gray-600 text-sm leading-relaxed">
-              The family member who just needs the answers. No more texting for the WiFi password or the nanny's contact. Get what you need in two taps without asking for help.
+              The family member who just needs the answers. No more texting for
+              the WiFi password or the nanny's contact. Get what you need in two
+              taps without asking for help.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 sm:py-24 bg-stone-50 relative overflow-hidden text-center">
+    <section
+      class="py-16 sm:py-24 bg-stone-50 relative overflow-hidden text-center"
+    >
       <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Be a Founding Family.</h2>
-        <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed">
-          We are currently in a closed beta, working with our first 50 families to shape the future of household management. We'd love for yours to be one of them.
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Be a Founding Family.
+        </h2>
+        <p
+          class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed"
+        >
+          We are currently in a closed beta, working with our first 50 families
+          to shape the future of household management. We'd love for yours to be
+          one of them.
         </p>
-        <a href="https://app.familyhq.co" class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold text-white bg-familyhq-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-900">
+        <a
+          href="https://app.familite.co"
+          class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-900"
+        >
           Get Started for Free
         </a>
       </div>
     </section>
 
     <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
+      >
         <div class="flex items-center gap-2">
-          <a href="index.html" class="text-xl font-bold text-white hover:text-familyhq-orange transition">FamilyHQ</a>
+          <a
+            href="index.html"
+            class="text-xl font-bold text-white hover:text-brand-orange transition"
+            >familite<span class="text-gray-400">.co</span></a
+          >
           <span class="text-xs text-gray-500">© 2026</span>
         </div>
-        <div class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8">
+        <div
+          class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8"
+        >
           <a href="index.html" class="hover:text-white transition">Home</a>
           <a href="about.html" class="hover:text-white transition">About</a>
           <a href="privacy.html" class="hover:text-white transition">Privacy</a>
           <a href="terms.html" class="hover:text-white transition">Terms</a>
-          <a href="https://app.familyhq.co" class="text-white font-semibold hover:text-familyhq-orange transition">Open App</a>
+          <a
+            href="https://app.familite.co"
+            class="text-white font-semibold hover:text-brand-orange transition"
+            >Open App</a
+          >
         </div>
       </div>
     </footer>
-
   </body>
 </html>

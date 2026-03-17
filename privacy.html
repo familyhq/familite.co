@@ -1,155 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy & Security — FamilyHQ</title>
-    <meta name="description" content="Transparency first. Learn how FamilyHQ protects your family's data, money, and documents." />
+    <title>familite.co — Family Life, Simplified.</title>
+    <meta name="description" content="Stop the 'mental load.' Familite is the collaborative digital space for money, schedules, and shared family documents." />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-familyhq-orange: #ea580c;
-        --color-familyhq-orange-light: #fed7aa;
-        --font-sans: 'DM Sans', system-ui, sans-serif;
+        --color-brand-orange: #ea580c;
+        --color-brand-orange-light: #fed7aa;
+        --font-sans: "DM Sans", system-ui, sans-serif;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+    
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3e4f5dfa-ffc5-466e-99ab-bbc910466548" type="text/javascript" async></script>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEE1FN249J"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-DEE1FN249J');
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-DEE1FN249J");
     </script>
   </head>
   <body class="font-sans antialiased text-gray-800 bg-stone-50">
-
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-0">
-        <div class="flex items-center">
-          <a href="index.html" class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight text-familyhq-orange">FamilyHQ</a>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="text-2xl font-bold tracking-tight text-brand-orange transition hover:scale-105">familite<span class="text-gray-900">.co</span></a>
         </div>
-        <div class="flex items-center gap-2 sm:gap-4 lg:gap-8 text-xs sm:text-sm flex-wrap">
-          <a href="index.html" class="text-gray-500 hover:text-gray-900 transition">Home</a>
-          <a href="about.html" class="text-gray-500 hover:text-gray-900 transition">About</a>
-          <a href="privacy.html" class="text-gray-500 hover:text-gray-900 transition">Privacy</a>
-          <a href="terms.html" class="text-gray-500 hover:text-gray-900 transition">Terms</a>
-          <a href="https://app.familyhq.co" class="ml-auto inline-flex items-center justify-center px-4 py-2 font-semibold text-white bg-familyhq-orange rounded-lg hover:shadow-lg transition">Open App</a>
+        <div class="flex items-center gap-4 sm:gap-8">
+          <a href="#finance" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Finance</a>
+          <a href="#planning" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Planning</a>
+          <a href="#vault" class="hidden sm:block text-sm font-medium text-gray-500 hover:text-gray-900 transition">Vault</a>
+          <a href="https://app.familite.co" class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:shadow-lg transition">Join Beta</a>
         </div>
       </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
-      <header class="mb-10 sm:mb-16">
-        <p class="text-xs sm:text-sm font-bold text-familyhq-orange uppercase tracking-widest mb-2">Transparency First</p>
-        <h1 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Privacy & Security</h1>
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-          At FamilyHQ, we believe your family's data belongs to you. This policy outlines how we protect your information and—more importantly—what we <strong>don't</strong> do with it.
+    <header class="relative pt-16 pb-20 lg:pt-28 lg:pb-36 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange text-xs font-bold uppercase tracking-wider mb-6">
+          Early-Access Beta for Modern Families
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-bold text-gray-900 tracking-tight mb-6 leading-tight">
+          Family life is heavy. <br class="hidden sm:block" />
+          <span class="text-brand-orange italic">Let’s make it Lite.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
+          The collaborative digital space designed to offload the practical details of home life—money, dates, and documents. Built for families who want less friction and more clarity.
         </p>
-        <div class="mt-4 p-4 bg-orange-50 rounded-lg border border-orange-100 text-xs text-gray-500 italic">
-            First Created: March 2026 | Last Updated: March 2026
-        </div>
-      </header>
+        <a href="https://app.familite.co" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-brand-orange rounded-xl hover:scale-105 transition shadow-2xl shadow-orange-200">
+          Build Your Family Space — Free
+        </a>
 
-      <section class="mb-12 sm:mb-20 bg-white p-4 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
-        <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">The "Too Long; Didn't Read" Summary</h2>
-        <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
-          <div class="flex gap-3 sm:gap-4">
-            <div class="text-2xl">🚫</div>
-            <div>
-              <p class="font-bold text-gray-900">We don't sell data.</p>
-              <p class="text-sm text-gray-600">Your bank statements, passwords, and schedules are never for sale.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 sm:gap-4">
-            <div class="text-2xl">🕵️‍♂️</div>
-            <div>
-              <p class="font-bold text-gray-900">We don't "browse" your files.</p>
-              <p class="text-sm text-gray-600">If you link a Google Drive file, we store the link, not the file's contents.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 sm:gap-4">
-            <div class="text-2xl">🔒</div>
-            <div>
-              <p class="font-bold text-gray-900">You control visibility.</p>
-              <p class="text-sm text-gray-600">Use Role-Based Access to hide finances from children or guests.</p>
-            </div>
-          </div>
-          <div class="flex gap-3 sm:gap-4">
-            <div class="text-2xl">📦</div>
-            <div>
-              <p class="font-bold text-gray-900">No Lock-In.</p>
-              <p class="text-sm text-gray-600">Your family handbook stays with you. You own every link and record.</p>
-            </div>
+        <div class="mt-16 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-transparent z-10"></div>
+          <div class="rounded-2xl border border-gray-200 shadow-2xl overflow-hidden bg-white max-w-5xl mx-auto transition-transform hover:scale-[1.01]">
+            <img src="assets/dashboard_main.png" alt="Familite Dashboard" class="w-full h-auto" loading="eager" />
           </div>
         </div>
-      </section>
-
-      <div class="space-y-10 sm:space-y-16">
-        <section>
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">What we collect (and why)</h3>
-          <p class="text-gray-600 mb-6">To provide your Family Command Center, we process a few key types of information:</p>
-          <div class="space-y-6">
-            <div class="border-l-4 border-orange-100 pl-6">
-              <h4 class="font-bold text-gray-900">1. Account & Identity</h4>
-              <p class="text-gray-600 text-sm">We use <strong>Supabase Auth</strong> for secure sign-in. We store your name and email to manage your membership in your Family Workspace.</p>
-            </div>
-            <div class="border-l-4 border-orange-100 pl-6">
-              <h4 class="font-bold text-gray-900">2. Financial Statements (Money)</h4>
-              <p class="text-gray-600 text-sm">When you upload a bank statement (PDF/CSV), we store it in <strong>Google Cloud Storage (GCP)</strong> exclusively for parsing. Once the transactions are extracted, you choose which ones to save to your ledger.</p>
-            </div>
-            <div class="border-l-4 border-orange-100 pl-6">
-              <h4 class="font-bold text-gray-900">3. The Vault (Documents & Links)</h4>
-              <p class="text-gray-600 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it in our secure backend. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Who can see your data?</h3>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            FamilyHQ is a shared space, but not everyone needs to see everything. We use <strong>Role-Based Access Control (RBAC)</strong> to let you decide who sees what.
-          </p>
-          <ul class="list-disc pl-6 text-gray-600 text-sm space-y-3">
-            <li><strong>Admins:</strong> Have full control over finances, vault items, and settings.</li>
-            <li><strong>Members:</strong> Can typically see planning and vault items but may have restricted access to finances.</li>
-            <li><strong>Children/Guests:</strong> Parents can connect children's calendars (like school schedules) for visibility without giving the child access to parent-level finances.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">How we keep it safe</h3>
-          <p class="text-gray-600 leading-relaxed mb-4">
-            We use industry-standard encryption and security infrastructure to protect your household.
-          </p>
-          <ul class="list-disc pl-6 text-gray-600 text-sm space-y-2">
-            <li><strong>Secure Auth:</strong> We never see your Google password; sign-in is handled securely via Google OAuth.</li>
-            <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our Go-backend is validated with secure JWT tokens.</li>
-            <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
-          </ul>
-        </section>
-
-        <section class="p-4 sm:p-8 rounded-2xl bg-gray-900 text-white">
-          <h3 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Still have questions?</h3>
-          <p class="text-gray-400 text-sm mb-4 sm:mb-6 leading-relaxed">
-            We are a small team dedicated to helping families. If you have any concerns about how your data is handled, we want to hear from you.
-          </p>
-          <a href="mailto:privacy@familyhq.co" class="inline-block px-6 py-3 bg-familyhq-orange font-bold rounded-lg hover:scale-105 transition">Email our Privacy Team</a>
-          <p class="mt-6 text-xs text-gray-500">privacy@familyhq.co | Responding as required by law.</p>
-        </section>
       </div>
-    </main>
+    </header>
+
+    <section class="py-20 bg-white border-y border-gray-100">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 italic">One space for your family. Finally.</h2>
+        <div class="grid md:grid-cols-2 gap-8 text-left">
+          <div class="p-8 rounded-2xl bg-stone-50 border border-gray-100">
+            <h3 class="font-bold text-red-600 mb-4">The "Mental Load"</h3>
+            <ul class="space-y-3 text-gray-600 text-sm">
+              <li>• Texting "Where is the nanny's number?".</li>
+              <li>• Manual timezone math for family calls.</li>
+              <li>• Digging through emails for bank PDFs.</li>
+              <li>• Losing track of visa expiration dates.</li>
+            </ul>
+          </div>
+          <div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 shadow-sm">
+            <h3 class="font-bold text-brand-orange mb-4">The Familite Way</h3>
+            <ul class="space-y-3 text-gray-700 text-sm">
+              <li>• A permanent "Wiki" for every detail.</li>
+              <li>• Live, timezone-aware event syncing.</li>
+              <li>• AI-powered transaction parsing.</li>
+              <li>• Automated travel & document alerts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="finance" class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div class="lg:sticky lg:top-32">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-brand-orange text-xs font-bold uppercase mb-4 tracking-wider">Finance</div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">Financial Friction, Gone.</h2>
+            <p class="text-lg text-gray-600 mb-8">Upload bank statements and let Familite do the work. You stay in control with a simple verification wizard.</p>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="mt-1 bg-brand-orange rounded-full p-1"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Smart Parsing & Review</h4>
+                  <p class="text-gray-600 text-sm">Upload PDF; our engine extracts draft transactions for you to confirm and categorize.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="mt-1 bg-brand-orange rounded-full p-1"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Multi-Currency Native</h4>
+                  <p class="text-gray-600 text-sm">Set a household base currency (like EUR) while tracking local expenses (like IDR).</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6 overflow-hidden">
+            <img src="assets/money_multi_currency.png" alt="Multi-currency finances" class="w-full h-auto rounded-2xl shadow-xl border border-gray-100" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img src="assets/import_transactions.png" alt="Import data" class="w-full h-auto rounded-xl shadow-md border border-gray-100" />
+              <img src="assets/review_transaction.png" alt="Review flow" class="w-full h-auto rounded-xl shadow-md border border-gray-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="py-24 bg-stone-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 overflow-hidden">
+            <img src="assets/calendar_main.png" alt="Family Calendar" class="w-full h-auto rounded-2xl shadow-2xl border border-gray-100" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs font-bold uppercase mb-4 tracking-wider">Planning</div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Coordination, Simplified.</h2>
+            <p class="text-lg text-gray-600 mb-8">Finally, a calendar that speaks your timezone. Events adjust automatically so everyone knows the real time to join.</p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="mt-1 bg-blue-500 rounded-full p-1"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-gray-700 font-medium">Google Calendar Sync</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-1 bg-blue-500 rounded-full p-1"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-gray-700 font-medium">Smart Scheduler for Distributed Families</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vault" class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase mb-4 tracking-wider">The Vault</div>
+          <h2 class="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">Your Single Source of Truth.</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Reclaim the hours spent looking for what matters. The Vault connects your family to essential documents and shared knowledge.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">The Family Wiki</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Store critical info everyone asks for: WiFi passwords, nanny contacts, or child preferences.</p>
+          </div>
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">Storage-Agnostic Map</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Keep your data where you want it. Reference links in GDrive or iCloud, or upload directly.</p>
+          </div>
+          <div class="bg-stone-50 p-8 rounded-2xl border border-gray-100 transition-shadow hover:shadow-md">
+            <h4 class="font-bold text-gray-900 mb-3">Document Hub</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">Track visa expiration dates, passports, and shared itineraries. Stay ahead of the paperwork.</p>
+          </div>
+        </div>
+        <img src="assets/vault_main.png" alt="The Familite Vault" class="w-full h-auto max-w-5xl mx-auto rounded-2xl shadow-2xl border border-gray-100" />
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-900 text-white overflow-hidden relative">
+      <div class="absolute top-0 right-0 -mt-24 -mr-24 w-96 h-96 bg-brand-orange opacity-10 rounded-full blur-3xl"></div>
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 italic">Privacy by Design. Peace of Mind by Choice.</h2>
+        <p class="text-lg text-gray-400 mb-12">Familite uses world-class infrastructure to ensure your household data remains family-scoped and locked away from the rest of the world.</p>
+        <div class="grid sm:grid-cols-2 gap-12 text-left">
+          <div class="border-l-2 border-brand-orange pl-6">
+            <h4 class="font-bold text-xl mb-3">You Control Who Sees What</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Decide exactly who can see the household finances vs. who just needs to find the guest room gate key. Granular sharing keeps private details private.</p>
+          </div>
+          <div class="border-l-2 border-brand-orange pl-6">
+            <h4 class="font-bold text-xl mb-3">Your Data, Your Property</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">We don't hold your information hostage. You own every record, link, and document. If you ever decide to leave, your family space goes with you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
         <div class="flex items-center gap-2">
-          <a href="index.html" class="text-xl font-bold text-white hover:text-familyhq-orange transition">FamilyHQ</a>
+          <a href="index.html" class="text-xl font-bold text-white hover:text-brand-orange transition">familite.co</a>
           <span class="text-xs text-gray-500">© 2026</span>
         </div>
         <div class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8">
@@ -157,10 +207,9 @@
           <a href="about.html" class="hover:text-white transition">About</a>
           <a href="privacy.html" class="hover:text-white transition">Privacy</a>
           <a href="terms.html" class="hover:text-white transition">Terms</a>
-          <a href="https://app.familyhq.co" class="text-white font-semibold hover:text-familyhq-orange transition">Open App</a>
+          <a href="https://app.familite.co" class="text-white font-semibold hover:text-brand-orange transition">Open App</a>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
