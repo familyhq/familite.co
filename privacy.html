@@ -151,7 +151,7 @@
           importantly—what we <strong>don't</strong> do with it.
         </p>
         <div class="mt-4 p-4 bg-orange-50 rounded-lg border border-orange-100 text-xs text-gray-500 italic">
-            First Created: March 2026 | Last Updated: March 2026
+            First Created: March 2026 | Last Updated: March 18, 2026
         </div>
       </header>
 
@@ -170,6 +170,13 @@
             <div>
               <p class="font-bold text-gray-900">We don't "browse" your files.</p>
               <p class="text-sm text-gray-600">If you link a Google Drive file, we store the link, not the file's contents.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">📅</div>
+            <div>
+              <p class="font-bold text-gray-900">Calendar access is opt-in.</p>
+              <p class="text-sm text-gray-600">We only access calendar data you explicitly connect, to sync and show events in your family space.</p>
             </div>
           </div>
           <div class="flex gap-3 sm:gap-4">
@@ -206,6 +213,15 @@
               <h4 class="font-bold text-gray-900">3. The Vault (Documents & Links)</h4>
               <p class="text-gray-600 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it in our secure backend. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
             </div>
+            <div class="border-l-4 border-orange-100 pl-6">
+              <h4 class="font-bold text-gray-900">4. Google Calendar (when you connect it)</h4>
+              <p class="text-gray-600 text-sm mb-3">If you connect Google Calendar, we request two permissions so we can sync and show events in your family space:</p>
+              <ul class="list-disc pl-4 text-gray-600 text-sm space-y-2 mb-3">
+                <li><strong>Read-only calendar access</strong> — "See and download any calendar you can access using your Google Calendar." We use this to list the calendars you can access and to read and sync events so your family can view shared calendars.</li>
+                <li><strong>View and edit events</strong> — "View and edit events on all your calendars." We use this to create events from the app (including events you schedule with family members), update events when syncing changes, and set up push notifications for calendar updates. Events you schedule with family members from the app are reflected on each member's connected Google Calendar.</li>
+              </ul>
+              <p class="text-gray-600 text-sm">Calendar data is used only to provide calendar sync, family visibility, and family scheduling within the Service. We do not sell it or use it for advertising. You can disconnect Calendar in app settings at any time to revoke access.</p>
+            </div>
           </div>
         </section>
 
@@ -228,6 +244,7 @@
           </p>
           <ul class="list-disc pl-6 text-gray-600 text-sm space-y-2">
             <li><strong>Secure Auth:</strong> We never see your Google password; sign-in is handled securely via Google OAuth.</li>
+            <li><strong>Calendar API access:</strong> Google Calendar access uses the same secure OAuth flow and is scoped only to the account you connect.</li>
             <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our Go-backend is validated with secure JWT tokens.</li>
             <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
           </ul>
