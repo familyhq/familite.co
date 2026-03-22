@@ -59,7 +59,6 @@
             >familite<span class="text-gray-900 dark:text-white">.co</span></a
           >
         </div>
-        <!-- Desktop nav -->
         <div class="hidden md:flex items-center gap-4 sm:gap-8">
           <a
             href="index.html"
@@ -87,7 +86,6 @@
             >Open App</a
           >
         </div>
-        <!-- Mobile hamburger -->
         <button
           type="button"
           class="md:hidden p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 transition"
@@ -104,7 +102,6 @@
           </svg>
         </button>
       </div>
-      <!-- Mobile menu panel -->
       <div
         id="mobile-menu"
         class="hidden md:hidden absolute top-16 left-0 right-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-lg px-4 py-4"
@@ -143,7 +140,7 @@
           Transparency First
         </p>
         <h1 class="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
-          Privacy & Security
+          Privacy &amp; Security
         </h1>
         <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
           At familite.co, we believe your family's data belongs to you. This
@@ -151,7 +148,7 @@
           importantly—what we <strong>don't</strong> do with it.
         </p>
         <div class="mt-4 p-4 bg-orange-50 dark:bg-orange-900/30 rounded-lg border border-orange-100 dark:border-orange-800/50 text-xs text-gray-500 dark:text-gray-400 italic">
-            First Created: March 2026 | Last Updated: March 18, 2026
+            First Created: March 2026 | Last Updated: March 22, 2026
         </div>
       </header>
 
@@ -202,7 +199,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-6">To provide your family space, we process a few key types of information:</p>
           <div class="space-y-6">
             <div class="border-l-4 border-orange-100 dark:border-orange-800 pl-6">
-              <h4 class="font-bold text-gray-900 dark:text-white">1. Account & Identity</h4>
+              <h4 class="font-bold text-gray-900 dark:text-white">1. Account &amp; Identity</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">We use <strong>Supabase Auth</strong> for secure sign-in. We store your name and email to manage your membership in your Family Workspace.</p>
             </div>
             <div class="border-l-4 border-orange-100 dark:border-orange-800 pl-6">
@@ -210,7 +207,7 @@
               <p class="text-gray-600 dark:text-gray-400 text-sm">When you upload a bank statement (PDF), we store it in <strong>Google Cloud Storage (GCP)</strong> exclusively for parsing. Once the transactions are extracted, you choose which ones to save to your ledger.</p>
             </div>
             <div class="border-l-4 border-orange-100 dark:border-orange-800 pl-6">
-              <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents & Links)</h4>
+              <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents &amp; Links)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it in our secure backend. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
             </div>
             <div class="border-l-4 border-orange-100 dark:border-orange-800 pl-6">
@@ -220,7 +217,16 @@
                 <li><strong>Read-only calendar access</strong> — "See and download any calendar you can access using your Google Calendar." We use this to list the calendars you can access and to read and sync events so your family can view shared calendars.</li>
                 <li><strong>View and edit events</strong> — "View and edit events on all your calendars." We use this to create events from the app (including events you schedule with family members), update events when syncing changes, and set up push notifications for calendar updates. Events you schedule with family members from the app are reflected on each member's connected Google Calendar.</li>
               </ul>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Calendar data is used only to provide calendar sync, family visibility, and family scheduling within the Service. We do not sell it or use it for advertising. You can disconnect Calendar in app settings at any time to revoke access.</p>
+              
+              <h5 class="text-xs font-bold uppercase tracking-widest text-gray-900 dark:text-white mt-4 mb-2">Google User Data Disclosure &amp; Sharing</h5>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                We do not share, transfer, or disclose Google user data to any third parties for advertising, marketing, or unrelated purposes. Data is shared only with our internal <strong>Service Providers</strong> (e.g., Supabase for database management and Google Cloud Platform for secure storage) as strictly necessary to provide the calendar sync features.
+              </p>
+              <h5 class="text-xs font-bold uppercase tracking-widest text-gray-900 dark:text-white mt-4 mb-2">Retention &amp; Deletion of Google Data</h5>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                We retain your Google user data only for as long as your account is active or the Google Calendar remains connected. If you disconnect your calendar in settings or delete your Familite account, all synced Google data is immediately and permanently removed from our active databases. You may also request manual data deletion at any time by emailing <strong>privacy@familite.co</strong>.
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm italic">Calendar data is used only to provide calendar sync, family visibility, and family scheduling within the Service. We do not sell it or use it for advertising. You can disconnect Calendar in app settings at any time to revoke access.</p>
             </div>
           </div>
         </section>
@@ -245,7 +251,7 @@
           <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-2">
             <li><strong>Secure Auth:</strong> We never see your Google password; sign-in is handled securely via Google OAuth.</li>
             <li><strong>Calendar API access:</strong> Google Calendar access uses the same secure OAuth flow and is scoped only to the account you connect.</li>
-            <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our Go-backend is validated with secure JWT tokens.</li>
+            <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our secure backend infrastructure is validated with secure JWT tokens.</li>
             <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
           </ul>
         </section>
