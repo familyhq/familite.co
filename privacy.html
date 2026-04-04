@@ -191,6 +191,13 @@
               <p class="text-sm text-gray-600 dark:text-gray-400">Your family handbook stays with you. You own every link and record.</p>
             </div>
           </div>
+          <div class="flex gap-3 sm:gap-4">
+            <div class="text-2xl">⚙️</div>
+            <div>
+              <p class="font-bold text-gray-900 dark:text-white">AI is scoped & transparent.</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">We use Google Vertex AI exclusively to parse bank statements you upload. No profiling, no model training on your data.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -206,6 +213,22 @@
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">2. Financial Statements (Money)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">When you upload a bank statement (PDF), we store it in <strong>Google Cloud Storage (GCP)</strong> exclusively for parsing. Once the transactions are extracted, you choose which ones to save to your ledger.</p>
+            </div>
+            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+              <h4 class="font-bold text-gray-900 dark:text-white">2a. AI-Assisted Processing (Google Vertex AI)</h4>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                To power our smart parsing feature, uploaded bank statement PDFs are sent to
+                <strong>Google Vertex AI</strong> (Gemini) — a managed AI service by Google Cloud —
+                which extracts structured transaction data from your document.
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                You review, confirm, and categorize each transaction before it is saved to your ledger.
+                We do not use your documents to train AI models, and Vertex AI does not retain
+                your content after processing.
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">
+                Once parsing is complete, the uploaded PDF is automatically deleted from our storage.
+              </p>
             </div>
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents &amp; Links)</h4>
@@ -254,6 +277,7 @@
             <li><strong>Calendar API access:</strong> Google Calendar access uses the same secure OAuth flow and is scoped only to the account you connect.</li>
             <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our secure backend infrastructure is validated with secure JWT tokens.</li>
             <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
+            <li><strong>AI Processing:</strong> Bank statement parsing via Google Vertex AI is request-scoped — your document is processed and the AI service does not retain any content after the response is returned. The uploaded file is automatically removed from our storage once parsing completes.</li>
           </ul>
         </section>
 
