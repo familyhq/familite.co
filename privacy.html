@@ -149,7 +149,7 @@
           importantly—what we <strong>don't</strong> do with it.
         </p>
         <div class="mt-4 p-4 bg-teal-50 dark:bg-teal-900/30 rounded-lg border border-teal-100 dark:border-teal-800/50 text-xs text-gray-500 dark:text-gray-400 italic">
-            First Created: March 2026 | Last Updated: March 22, 2026
+            First Created: March 2026 | Last Updated: April 4, 2026
         </div>
       </header>
 
@@ -212,7 +212,7 @@
             </div>
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">2. Financial Statements (Money)</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">When you upload a bank statement (PDF), we store it in <strong>Google Cloud Storage (GCP)</strong> exclusively for parsing. Once the transactions are extracted, you choose which ones to save to your ledger.</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">When you upload a bank statement (PDF), we store it securely in <strong>Google Cloud Storage</strong>. The file is used for AI-powered transaction parsing and retained for as long as your account is active. Once the transactions are extracted, you review and choose which ones to save to your ledger. You may request deletion of any uploaded file at any time.</p>
             </div>
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">2a. AI-Assisted Processing (Google Vertex AI)</h4>
@@ -232,7 +232,7 @@
             </div>
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents &amp; Links)</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it in our secure backend. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it securely in <strong>Google Cloud Storage</strong>. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
             </div>
             <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">4. Google Calendar (when you connect it)</h4>
@@ -279,6 +279,55 @@
             <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
             <li><strong>AI Processing:</strong> Bank statement parsing via Google Vertex AI is request-scoped — your document is processed and the AI service does not retain any content after the response is returned.</li>
           </ul>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Analytics &amp; Cookies</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+            We use a small number of third-party tools to understand how the Service is used and to manage cookie consent.
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-2">
+            <li><strong>Google Analytics:</strong> We collect anonymized usage data (page views, session duration, device type) to improve the Service. No personally identifiable information is sent to Google Analytics.</li>
+            <li><strong>Cookiebot:</strong> We use Cookiebot to manage your cookie consent preferences in compliance with GDPR and ePrivacy regulations.</li>
+          </ul>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mt-4">We do not sell analytics data or use it for advertising. You can manage your cookie preferences at any time via the cookie consent banner.</p>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Data Retention</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+            We retain your data only for as long as necessary to provide the Service. Here is how long each type of data is kept:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-2">
+            <li><strong>Account data</strong> (name, email): Retained while your account is active. Deleted upon account deletion.</li>
+            <li><strong>Financial PDFs:</strong> Retained in Google Cloud Storage while your account is active. You may request deletion at any time by contacting <strong>privacy@familite.co</strong>.</li>
+            <li><strong>Transaction records:</strong> Retained while your account is active. Deleted upon account deletion.</li>
+            <li><strong>Vault files &amp; links:</strong> Retained while your account is active. You can delete individual items at any time from within the app.</li>
+            <li><strong>Google Calendar data:</strong> Retained while the calendar remains connected. Immediately and permanently removed when you disconnect the calendar or delete your account.</li>
+            <li><strong>Analytics data:</strong> Governed by Google Analytics data retention settings (default: 14 months).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Your Rights</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+            Depending on your jurisdiction, you may have the following rights regarding your personal data:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-2">
+            <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+            <li><strong>Correction:</strong> Request that we correct any inaccurate or incomplete data.</li>
+            <li><strong>Deletion:</strong> Request that we delete your personal data and account.</li>
+            <li><strong>Data Portability:</strong> Request an export of your data in a structured, machine-readable format.</li>
+            <li><strong>Withdraw Consent:</strong> Revoke consent for data processing at any time (e.g., disconnect Google Calendar, delete uploaded files).</li>
+          </ul>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mt-4">To exercise any of these rights, contact us at <strong>privacy@familite.co</strong>. We will respond within 30 days.</p>
+        </section>
+
+        <section>
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Children's Privacy</h3>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Children under 13 do not create their own accounts on familite.co. A parent or guardian manages their profile within the Family Workspace and controls what data is visible to them through our Role-Based Access system. We do not knowingly collect personal information directly from children under 13. If you believe a child has provided us with personal data without parental consent, please contact <strong>privacy@familite.co</strong> and we will promptly remove it.
+          </p>
         </section>
 
         <section class="p-4 sm:p-8 rounded-2xl bg-gray-900 text-white">
