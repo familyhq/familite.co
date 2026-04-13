@@ -11,10 +11,12 @@
     <link rel="canonical" href="https://familite.co/privacy.html" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon/Favicon_1.svg" />
     <style type="text/tailwindcss">
       @theme {
-        --color-brand-teal: #0f766e;
-        --color-brand-teal-light: #99f6e4;
+        --color-brand-teal: #0E3E48;
+        --color-brand-teal-light: #08D1D0;
+        --color-brand-mint: #96E5AC;
         --color-brand-navy: #0b1f2e;
         --font-sans: "DM Sans", system-ui, sans-serif;
       }
@@ -53,13 +55,10 @@
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
       >
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="text-2xl font-bold tracking-tight text-brand-teal transition hover:scale-105"
-            >familite<span class="text-gray-900 dark:text-white">.co</span></a
-          >
-        </div>
+        <a href="index.html" class="transition hover:scale-105">
+          <img src="logo_color/Logo_color.svg" alt="familite.co" class="h-8 dark:hidden" />
+          <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-8 hidden dark:block" />
+        </a>
         <div class="hidden md:flex items-center gap-4 sm:gap-8">
           <a
             href="index.html"
@@ -83,7 +82,7 @@
           >
           <a
             href="https://app.familite.co"
-            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-teal-500/20 transition"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-brand-teal-light/20 transition"
             >Open App</a
           >
         </div>
@@ -148,7 +147,7 @@
           policy outlines how we protect your information and—more
           importantly—what we <strong>don't</strong> do with it.
         </p>
-        <div class="mt-4 p-4 bg-teal-50 dark:bg-teal-900/30 rounded-lg border border-teal-100 dark:border-teal-800/50 text-xs text-gray-500 dark:text-gray-400 italic">
+        <div class="mt-4 p-4 bg-brand-teal/5 dark:bg-brand-teal/10 rounded-lg border border-brand-teal/15 dark:border-brand-teal/30 text-xs text-gray-500 dark:text-gray-400 italic">
             First Created: March 2026 | Last Updated: April 4, 2026
         </div>
       </header>
@@ -206,15 +205,15 @@
           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">What we collect (and why)</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6">To provide your family space, we process a few key types of information:</p>
           <div class="space-y-6">
-            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">1. Account &amp; Identity</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">We use <strong>Supabase Auth</strong> for secure sign-in. We store your name and email to manage your membership in your Family Workspace.</p>
             </div>
-            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">2. Financial Statements (Money)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">When you upload a bank statement (PDF), we store it securely in <strong>Google Cloud Storage</strong>. The file is used for AI-powered transaction parsing and retained for as long as your account is active. Once the transactions are extracted, you review and choose which ones to save to your ledger. You may request deletion of any uploaded file at any time.</p>
             </div>
-            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">2a. AI-Assisted Processing (Google Vertex AI)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
                 To power our smart parsing feature, uploaded bank statement PDFs are sent to
@@ -230,11 +229,11 @@
                 Uploaded PDFs are stored securely in our Google Cloud Storage infrastructure for as long as your account is active. You may request deletion of any uploaded file at any time by contacting <strong>privacy@familite.co</strong>.
               </p>
             </div>
-            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents &amp; Links)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it securely in <strong>Google Cloud Storage</strong>. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
             </div>
-            <div class="border-l-4 border-teal-100 dark:border-teal-800 pl-6">
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">4. Google Calendar (when you connect it)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">If you connect Google Calendar, we request two permissions so we can sync and show events in your family space:</p>
               <ul class="list-disc pl-4 text-gray-600 dark:text-gray-400 text-sm space-y-2 mb-3">
@@ -352,12 +351,10 @@
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
       >
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="text-xl font-bold text-white hover:text-brand-teal transition"
-            >familite<span class="text-gray-400">.co</span></a
-          >
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="transition hover:opacity-80">
+            <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-7" />
+          </a>
           <span class="text-xs text-gray-500">© 2026</span>
         </div>
         <div

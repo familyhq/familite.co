@@ -36,10 +36,12 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/svg+xml" href="favicon/Favicon_1.svg" />
     <style type="text/tailwindcss">
       @theme {
-        --color-brand-teal: #0f766e;
-        --color-brand-teal-light: #99f6e4;
+        --color-brand-teal: #0E3E48;
+        --color-brand-teal-light: #08D1D0;
+        --color-brand-mint: #96E5AC;
         --color-brand-navy: #0b1f2e;
         --font-sans: "DM Sans", system-ui, sans-serif;
       }
@@ -79,13 +81,10 @@
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
       >
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="text-2xl font-bold tracking-tight text-brand-teal transition hover:scale-105"
-            >familite<span class="text-gray-900 dark:text-white">.co</span></a
-          >
-        </div>
+        <a href="index.html" class="transition hover:scale-105">
+          <img src="logo_color/Logo_color.svg" alt="familite.co" class="h-8 dark:hidden" />
+          <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-8 hidden dark:block" />
+        </a>
         <!-- Desktop nav -->
         <div class="hidden md:flex items-center gap-4 sm:gap-8">
           <a
@@ -110,7 +109,7 @@
           >
           <a
             href="https://app.familite.co"
-            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-teal-500/20 transition"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-brand-teal-light/20 transition"
             >Open App</a
           >
         </div>
@@ -171,7 +170,7 @@
           <span class="text-brand-teal">solo journey.</span>
         </h1>
         <p
-          class="text-base sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-4 border-teal-100 dark:border-teal-800 pl-4 sm:pl-6"
+          class="text-base sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-4 sm:pl-6"
         >
           "familite.co was born from a simple realization: modern life is
           distributed, but our family information is fragmented. We didn't need
@@ -203,7 +202,7 @@
       </div>
     </section>
 
-    <section class="py-12 sm:py-20 bg-teal-50/50 dark:bg-teal-900/20">
+    <section class="py-12 sm:py-20 bg-brand-teal/5 dark:bg-brand-teal/10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10 sm:mb-16">
           <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
@@ -259,7 +258,7 @@
             class="p-5 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-700 bg-stone-50 dark:bg-gray-800"
           >
             <h4
-              class="font-bold text-brand-teal dark:text-teal-300 mb-2 text-lg sm:text-xl italic text-shadow-sm"
+              class="font-bold text-brand-teal dark:text-brand-teal-light mb-2 text-lg sm:text-xl italic text-shadow-sm"
             >
               The Organizer
             </h4>
@@ -274,7 +273,7 @@
             class="p-5 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-700 bg-stone-50 dark:bg-gray-800"
           >
             <h4
-              class="font-bold text-brand-teal dark:text-teal-300 mb-2 text-lg sm:text-xl italic text-shadow-sm"
+              class="font-bold text-brand-teal dark:text-brand-teal-light mb-2 text-lg sm:text-xl italic text-shadow-sm"
             >
               The Participant
             </h4>
@@ -304,7 +303,7 @@
         </p>
         <a
           href="https://app.familite.co"
-          class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold text-white bg-brand-teal rounded-xl hover:scale-105 transition shadow-2xl shadow-teal-200 dark:shadow-teal-500/20"
+          class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold text-white bg-brand-teal rounded-xl hover:scale-105 transition shadow-2xl shadow-brand-teal-light/30 dark:shadow-brand-teal-light/20"
         >
           Get Started for Free
         </a>
@@ -315,12 +314,10 @@
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
       >
-        <div class="flex items-center gap-2">
-          <a
-            href="index.html"
-            class="text-xl font-bold text-white hover:text-brand-teal transition"
-            >familite<span class="text-gray-400">.co</span></a
-          >
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="transition hover:opacity-80">
+            <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-7" />
+          </a>
           <span class="text-xs text-gray-500">© 2026</span>
         </div>
         <div
