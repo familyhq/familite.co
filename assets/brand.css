@@ -1,0 +1,203 @@
+:root {
+  --brand-primary: #0e3e48;
+  --brand-secondary: #08d1d0;
+  --brand-tertiary: #96e5ac;
+  --brand-success: #38a558;
+  --brand-info: #3399ae;
+  --brand-warning: #f5a623;
+  --brand-error: #e84040;
+  --brand-disabled: #a8c0c5;
+  --brand-disabled-button: #c2e5ee;
+  --brand-gray-900: #0d1517;
+  --brand-gray-800: #1c2b2f;
+  --brand-gray-700: #2e4249;
+  --brand-gray-600: #435d65;
+  --brand-gray-500: #5c7880;
+  --brand-gray-400: #7a969e;
+  --brand-gray-300: #9bb3b9;
+  --brand-gray-200: #bdd0d5;
+  --brand-gray-100: #d6e4e8;
+  --brand-gray-50: #eaf2f4;
+  --brand-dark-1: #060e11;
+  --brand-dark-2: #112430;
+  --brand-dark-3: #1a3342;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.brand-body {
+  color: var(--brand-gray-900);
+  background-color: #fff;
+}
+
+.brand-nav {
+  background-color: rgb(255 255 255 / 0.9);
+  border-color: var(--brand-gray-100);
+}
+
+.brand-nav-link {
+  color: var(--brand-gray-600);
+}
+
+.brand-nav-link:hover {
+  color: var(--brand-gray-900);
+}
+
+.brand-nav-link-active {
+  color: #fff;
+  background-color: var(--brand-primary);
+}
+
+.brand-primary-btn {
+  color: #fff;
+  background-color: var(--brand-primary);
+  border: 1px solid transparent;
+}
+
+.brand-primary-btn:hover {
+  background-color: color-mix(in srgb, var(--brand-primary), #000 10%);
+}
+
+.brand-primary-btn:focus-visible {
+  outline: 2px solid var(--brand-secondary);
+  outline-offset: 2px;
+}
+
+.brand-soft-section {
+  background-color: var(--brand-gray-50);
+}
+
+.brand-soft-card {
+  background-color: var(--brand-gray-50);
+  border-color: var(--brand-gray-100);
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-badge-primary {
+  color: var(--brand-primary);
+  background-color: rgb(14 62 72 / 0.1);
+}
+
+.brand-badge-info {
+  color: var(--brand-info);
+  background-color: rgb(51 153 174 / 0.12);
+}
+
+.brand-badge-success {
+  color: var(--brand-success);
+  background-color: rgb(56 165 88 / 0.12);
+}
+
+.brand-badge-warning {
+  color: var(--brand-gray-900);
+  background-color: rgb(245 166 35 / 0.2);
+}
+
+.brand-highlight {
+  border-left: 4px solid rgb(14 62 72 / 0.35);
+}
+
+.brand-muted {
+  color: var(--brand-gray-600);
+}
+
+.brand-footer {
+  background-color: var(--brand-dark-1);
+  color: var(--brand-gray-300);
+  border-color: var(--brand-gray-700);
+}
+
+.brand-footer-link:hover {
+  color: var(--brand-gray-50);
+}
+
+.brand-footer-cta {
+  color: #fff;
+}
+
+.brand-footer-cta:hover {
+  color: var(--brand-secondary);
+}
+
+.text-brand-teal {
+  color: var(--brand-primary);
+}
+
+.text-brand-teal-light,
+.text-brand-secondary {
+  color: var(--brand-secondary);
+}
+
+.text-brand-error {
+  color: var(--brand-error);
+}
+
+.bg-brand-teal {
+  background-color: var(--brand-primary);
+}
+
+.bg-brand-info {
+  background-color: var(--brand-info);
+}
+
+.bg-brand-dark-1 {
+  background-color: var(--brand-dark-1);
+}
+
+.border-brand-teal {
+  border-color: var(--brand-primary);
+}
+
+.bg-brand-teal\/5 {
+  background-color: rgb(14 62 72 / 0.05);
+}
+
+.bg-brand-teal\/10 {
+  background-color: rgb(14 62 72 / 0.1);
+}
+
+.bg-brand-teal\/20 {
+  background-color: rgb(14 62 72 / 0.2);
+}
+
+.border-brand-teal\/15 {
+  border-color: rgb(14 62 72 / 0.15);
+}
+
+.border-brand-teal\/30 {
+  border-color: rgb(14 62 72 / 0.3);
+}
+
+.shadow-brand-teal\/30 {
+  --tw-shadow-color: rgb(14 62 72 / 0.3);
+}
+
+.shadow-brand-teal-light\/20 {
+  --tw-shadow-color: rgb(8 209 208 / 0.2);
+}
+
+.shadow-brand-teal-light\/30 {
+  --tw-shadow-color: rgb(8 209 208 / 0.3);
+}

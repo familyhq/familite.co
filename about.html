@@ -37,19 +37,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/svg+xml" href="favicon/Favicon_1.svg" />
-    <style type="text/tailwindcss">
-      @theme {
-        --color-brand-teal: #0E3E48;
-        --color-brand-teal-light: #08D1D0;
-        --color-brand-mint: #96E5AC;
-        --color-brand-navy: #0b1f2e;
-        --font-sans: "DM Sans", system-ui, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/brand.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script
@@ -74,9 +66,9 @@
       gtag("config", "G-DEE1FN249J");
     </script>
   </head>
-  <body class="font-sans antialiased text-gray-800 bg-stone-50 dark:bg-gray-900 dark:text-gray-200">
+  <body class="font-sans antialiased brand-body">
     <nav
-      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 dark:bg-gray-900/90 dark:border-gray-800 relative"
+      class="sticky top-0 z-50 backdrop-blur-md border-b brand-nav relative"
     >
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
@@ -89,34 +81,34 @@
         <div class="hidden md:flex items-center gap-4 sm:gap-8">
           <a
             href="index.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >Home</a
           >
           <a
             href="about.html"
-            class="text-sm font-medium text-white bg-gray-800 dark:bg-gray-700 rounded-lg px-3 py-1.5 transition"
+            class="text-sm font-medium brand-nav-link-active rounded-lg px-3 py-1.5 transition"
             >About</a
           >
           <a
             href="privacy.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >Privacy</a
           >
           <a
             href="terms.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >Terms</a
           >
           <a
             href="https://app.familite.co"
-            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-brand-teal-light/20 transition"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg transition brand-primary-btn"
             >Open App</a
           >
         </div>
         <!-- Mobile hamburger -->
         <button
           type="button"
-          class="md:hidden p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 transition"
+          class="md:hidden p-2 rounded-lg brand-nav-link hover:bg-gray-100 transition"
           aria-expanded="false"
           aria-controls="mobile-menu"
           id="nav-toggle"
@@ -133,14 +125,14 @@
       <!-- Mobile menu panel -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden absolute top-16 left-0 right-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-lg px-4 py-4"
+        class="hidden md:hidden absolute top-16 left-0 right-0 z-40 bg-white border-b border-gray-100 shadow-lg px-4 py-4"
       >
         <div class="flex flex-col gap-1">
-          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">Home</a>
-          <a href="about.html" class="text-sm font-medium text-white bg-gray-800 dark:bg-gray-700 rounded-lg px-3 py-2 transition">About</a>
-          <a href="privacy.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">Privacy</a>
-          <a href="terms.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">Terms</a>
-          <a href="https://app.familite.co" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg transition mt-2">Open App</a>
+          <a href="index.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">Home</a>
+          <a href="about.html" class="text-sm font-medium brand-nav-link-active rounded-lg px-3 py-2 transition">About</a>
+          <a href="privacy.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">Privacy</a>
+          <a href="terms.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">Terms</a>
+          <a href="https://app.familite.co" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg transition mt-2 brand-primary-btn">Open App</a>
         </div>
       </div>
     </nav>
@@ -161,16 +153,16 @@
       })();
     </script>
 
-    <header class="py-12 sm:py-20 lg:py-32 bg-white dark:bg-gray-900">
+    <header class="py-12 sm:py-20 lg:py-32 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         <h1
-          class="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight mb-6 sm:mb-8"
+          class="text-3xl sm:text-5xl lg:text-6xl text-gray-900 tracking-tight mb-6 sm:mb-8"
         >
           We believe the "Mental Load" shouldn't be a
           <span class="text-brand-teal">solo journey.</span>
         </h1>
         <p
-          class="text-base sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-4 sm:pl-6"
+          class="text-base sm:text-xl brand-muted leading-relaxed italic brand-highlight pl-4 sm:pl-6"
         >
           "familite.co was born from a simple realization: modern life is
           distributed, but our family information is fragmented. We didn't need
@@ -202,7 +194,7 @@
       </div>
     </section>
 
-    <section class="py-12 sm:py-20 bg-brand-teal/5 dark:bg-brand-teal/10">
+    <section class="py-12 sm:py-20 bg-brand-teal/5">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10 sm:mb-16">
           <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
@@ -246,7 +238,7 @@
       </div>
     </section>
 
-    <section class="py-12 sm:py-20 bg-white dark:bg-gray-900">
+    <section class="py-12 sm:py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         <h2
           class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-12 text-center"
@@ -255,10 +247,10 @@
         </h2>
         <div class="grid sm:grid-cols-2 gap-6 sm:gap-12">
           <div
-            class="p-5 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-700 bg-stone-50 dark:bg-gray-800"
+            class="p-5 sm:p-8 rounded-2xl border brand-soft-card"
           >
             <h4
-              class="font-bold text-brand-teal dark:text-brand-teal-light mb-2 text-lg sm:text-xl italic text-shadow-sm"
+              class="font-bold text-brand-teal mb-2 text-lg sm:text-xl italic"
             >
               The Organizer
             </h4>
@@ -270,10 +262,10 @@
             </p>
           </div>
           <div
-            class="p-5 sm:p-8 rounded-2xl border border-gray-100 dark:border-gray-700 bg-stone-50 dark:bg-gray-800"
+            class="p-5 sm:p-8 rounded-2xl border brand-soft-card"
           >
             <h4
-              class="font-bold text-brand-teal dark:text-brand-teal-light mb-2 text-lg sm:text-xl italic text-shadow-sm"
+              class="font-bold text-brand-teal mb-2 text-lg sm:text-xl italic"
             >
               The Participant
             </h4>
@@ -288,7 +280,7 @@
     </section>
 
     <section
-      class="py-16 sm:py-24 bg-stone-50 dark:bg-gray-800/50 relative overflow-hidden text-center"
+      class="py-16 sm:py-24 brand-soft-section relative overflow-hidden text-center"
     >
       <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
@@ -303,14 +295,14 @@
         </p>
         <a
           href="https://app.familite.co"
-          class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold text-white bg-brand-teal rounded-xl hover:scale-105 transition shadow-2xl shadow-brand-teal-light/30 dark:shadow-brand-teal-light/20"
+          class="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 text-base sm:text-xl font-semibold rounded-xl hover:scale-105 transition shadow-2xl shadow-brand-teal-light/30 brand-primary-btn"
         >
           Get Started for Free
         </a>
       </div>
     </section>
 
-    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
+    <footer class="py-12 border-t brand-footer">
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
       >
@@ -318,18 +310,18 @@
           <a href="index.html" class="transition hover:opacity-80">
             <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-7" />
           </a>
-          <span class="text-xs text-gray-500">© 2026</span>
+          <span class="text-xs">© 2026</span>
         </div>
         <div
           class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8"
         >
-          <a href="index.html" class="hover:text-white transition">Home</a>
-          <a href="about.html" class="hover:text-white transition">About</a>
-          <a href="privacy.html" class="hover:text-white transition">Privacy</a>
-          <a href="terms.html" class="hover:text-white transition">Terms</a>
+          <a href="index.html" class="brand-footer-link transition">Home</a>
+          <a href="about.html" class="brand-footer-link transition">About</a>
+          <a href="privacy.html" class="brand-footer-link transition">Privacy</a>
+          <a href="terms.html" class="brand-footer-link transition">Terms</a>
           <a
             href="https://app.familite.co"
-            class="text-white font-semibold hover:text-brand-teal transition"
+            class="font-semibold brand-footer-cta transition"
             >Open App</a
           >
         </div>

@@ -12,19 +12,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/svg+xml" href="favicon/Favicon_1.svg" />
-    <style type="text/tailwindcss">
-      @theme {
-        --color-brand-teal: #0E3E48;
-        --color-brand-teal-light: #08D1D0;
-        --color-brand-mint: #96E5AC;
-        --color-brand-navy: #0b1f2e;
-        --font-sans: "DM Sans", system-ui, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/brand.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script
@@ -49,9 +41,9 @@
       gtag("config", "G-DEE1FN249J");
     </script>
   </head>
-  <body class="font-sans antialiased text-gray-800 bg-stone-50 dark:bg-gray-900 dark:text-gray-200">
+  <body class="font-sans antialiased brand-body">
     <nav
-      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 dark:bg-gray-900/90 dark:border-gray-800 relative"
+      class="sticky top-0 z-50 backdrop-blur-md border-b brand-nav relative"
     >
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
@@ -64,34 +56,34 @@
         <div class="hidden md:flex items-center gap-4 sm:gap-8">
           <a
             href="index.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >Home</a
           >
           <a
             href="about.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >About</a
           >
           <a
             href="privacy.html"
-            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition"
+            class="text-sm font-medium brand-nav-link transition"
             >Privacy</a
           >
           <a
             href="terms.html"
-            class="text-sm font-medium text-white bg-gray-800 dark:bg-gray-700 rounded-lg px-3 py-1.5 transition"
+            class="text-sm font-medium brand-nav-link-active rounded-lg px-3 py-1.5 transition"
             >Terms</a
           >
           <a
             href="https://app.familite.co"
-            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg dark:shadow-brand-teal-light/20 transition"
+            class="ml-auto inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg transition brand-primary-btn"
             >Open App</a
           >
         </div>
         <!-- Mobile hamburger -->
         <button
           type="button"
-          class="md:hidden p-2 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800 transition"
+          class="md:hidden p-2 rounded-lg brand-nav-link hover:bg-gray-100 transition"
           aria-expanded="false"
           aria-controls="mobile-menu"
           id="nav-toggle"
@@ -108,14 +100,14 @@
       <!-- Mobile menu panel -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden absolute top-16 left-0 right-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-lg px-4 py-4"
+        class="hidden md:hidden absolute top-16 left-0 right-0 z-40 bg-white border-b border-gray-100 shadow-lg px-4 py-4"
       >
         <div class="flex flex-col gap-1">
-          <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">Home</a>
-          <a href="about.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">About</a>
-          <a href="privacy.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white py-2 px-3 rounded-lg transition">Privacy</a>
-          <a href="terms.html" class="text-sm font-medium text-white bg-gray-800 dark:bg-gray-700 rounded-lg px-3 py-2 transition">Terms</a>
-          <a href="https://app.familite.co" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-teal rounded-lg hover:shadow-lg transition mt-2">Open App</a>
+          <a href="index.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">Home</a>
+          <a href="about.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">About</a>
+          <a href="privacy.html" class="text-sm font-medium brand-nav-link py-2 px-3 rounded-lg transition">Privacy</a>
+          <a href="terms.html" class="text-sm font-medium brand-nav-link-active rounded-lg px-3 py-2 transition">Terms</a>
+          <a href="https://app.familite.co" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg transition mt-2 brand-primary-btn">Open App</a>
         </div>
       </div>
     </nav>
@@ -139,20 +131,20 @@
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       <header class="mb-10 sm:mb-16">
         <p
-          class="text-xs sm:text-sm font-bold text-brand-teal uppercase tracking-widest mb-2"
+          class="brand-badge brand-badge-primary mb-2"
         >
           The Rules of the House
         </p>
-        <h1 class="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
+        <h1 class="text-3xl sm:text-5xl text-gray-900 mb-4 sm:mb-6">
           Terms of Service
         </h1>
-        <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+        <p class="text-base sm:text-lg brand-muted leading-relaxed">
           By using familite.co, you're joining a community of families striving for
           less mental load. These terms ensure the service remains
           safe and reliable for everyone.
         </p>
         <div
-          class="mt-4 p-4 bg-brand-teal/5 dark:bg-brand-teal/10 rounded-lg border border-brand-teal/15 dark:border-brand-teal/30 text-xs text-gray-500 dark:text-gray-400 italic"
+          class="mt-4 p-4 bg-brand-teal/5 rounded-lg border border-brand-teal/15 text-xs brand-muted italic"
         >
           Last Updated: April 4, 2026
         </div>
@@ -174,12 +166,12 @@
 
         <section>
           <h2
-            class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 text-brand-teal"
+          class="text-lg sm:text-xl text-gray-900 mb-3 sm:mb-4 text-brand-teal"
           >
             2. Beta Disclaimer
           </h2>
           <div
-            class="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl border border-brand-teal/15 dark:border-brand-teal/30 shadow-sm"
+            class="bg-white p-4 sm:p-6 rounded-xl border border-brand-teal/15 shadow-sm"
           >
             <p class="font-bold text-gray-900 dark:text-white mb-2">
               Important: You are joining an Early-Access Beta.
@@ -277,12 +269,10 @@
         </section>
 
         <section>
-          <h2
-            class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 text-red-600 dark:text-red-400"
-          >
+          <h2 class="text-lg sm:text-xl text-gray-900 mb-3 sm:mb-4 text-brand-error">
             7. Limitation of Liability
           </h2>
-          <p class="text-sm dark:text-gray-400">
+          <p class="text-sm brand-muted">
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, FAMILITE.CO SHALL NOT BE LIABLE
             FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES
             RESULTING FROM THE USE OR THE INABILITY TO USE THE SERVICE,
@@ -304,25 +294,25 @@
         </section>
 
         <section
-          class="p-4 sm:p-8 rounded-2xl bg-gray-900 text-white text-center"
+          class="p-4 sm:p-8 rounded-2xl brand-footer text-white text-center"
         >
           <h3 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
             Questions about these terms?
           </h3>
-          <p class="text-gray-400 text-sm mb-4 sm:mb-6">
+          <p class="text-sm mb-4 sm:mb-6">
             We're here to help you run your household better. If anything in
             these rules is unclear, please reach out.
           </p>
           <a
             href="mailto:support@familite.co"
-            class="text-brand-teal font-bold hover:underline"
+            class="text-brand-secondary font-bold hover:underline"
             >support@familite.co</a
           >
         </section>
       </div>
     </main>
 
-    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
+    <footer class="py-12 border-t brand-footer">
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
       >
@@ -330,18 +320,18 @@
           <a href="index.html" class="transition hover:opacity-80">
             <img src="logo_in_white/Logo_white.svg" alt="familite.co" class="h-7" />
           </a>
-          <span class="text-xs text-gray-500">© 2026</span>
+          <span class="text-xs">© 2026</span>
         </div>
         <div
           class="flex flex-wrap justify-center sm:justify-end gap-6 sm:gap-8"
         >
-          <a href="index.html" class="hover:text-white transition">Home</a>
-          <a href="about.html" class="hover:text-white transition">About</a>
-          <a href="privacy.html" class="hover:text-white transition">Privacy</a>
-          <a href="terms.html" class="hover:text-white transition">Terms</a>
+          <a href="index.html" class="brand-footer-link transition">Home</a>
+          <a href="about.html" class="brand-footer-link transition">About</a>
+          <a href="privacy.html" class="brand-footer-link transition">Privacy</a>
+          <a href="terms.html" class="brand-footer-link transition">Terms</a>
           <a
             href="https://app.familite.co"
-            class="text-white font-semibold hover:text-brand-teal transition"
+            class="font-semibold brand-footer-cta transition"
             >Open App</a
           >
         </div>
