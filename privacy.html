@@ -140,7 +140,7 @@
           importantly—what we <strong>don't</strong> do with it.
         </p>
         <div class="mt-4 p-4 bg-brand-teal/5 rounded-lg border border-brand-teal/15 text-xs brand-muted italic">
-            First Created: March 2026 | Last Updated: May 8, 2026
+            First Created: March 2026 | Last Updated: May 9, 2026
         </div>
       </header>
 
@@ -291,11 +291,13 @@
             We use industry-standard encryption and security infrastructure to protect your household.
           </p>
           <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-2">
-            <li><strong>Secure Auth:</strong> We never see your Google password; sign-in is handled securely via Google OAuth.</li>
-            <li><strong>Calendar API access:</strong> Google Calendar access uses the same secure OAuth flow and is scoped only to the account you connect.</li>
-            <li><strong>Encrypted Transfers:</strong> Every request between your dashboard and our secure backend infrastructure is validated with secure JWT tokens.</li>
-            <li><strong>Isolated Households:</strong> Your family data is scoped strictly to your unique Family ID. No other family can access your records.</li>
-            <li><strong>AI Processing:</strong> Bank statement parsing via Google Vertex AI is request-scoped — your document is processed and the AI service does not retain any content after the response is returned.</li>
+            <li><strong>Secure authentication.</strong> Sign-in uses Google OAuth, brokered by Supabase Auth. We never see, store, or transmit your Google password &mdash; Google verifies you and issues a token to Supabase, which then authenticates you to our app.</li>
+            <li><strong>TLS everywhere.</strong> Traffic between your browser, our app, and our backend runs over HTTPS, enforced by HSTS so browsers refuse to fall back to unencrypted connections.</li>
+            <li><strong>Signed API requests.</strong> Every request to our API carries a short-lived JWT issued by Supabase, which we re-verify against Supabase's rotating signing keys before any data is read or written.</li>
+            <li><strong>Encryption at rest with per-family keys.</strong> Bank-statement PDFs, bill PDFs, forwarded email bodies, vault items, and bank account numbers are encrypted using a unique data key for your family. That data key is itself wrapped by Google Cloud KMS, so its plaintext form is never stored in our database. Account numbers use a separate keyed hash for matching, so we can look them up without ever decrypting them.</li>
+            <li><strong>Strict household isolation.</strong> Your family data is scoped to a unique Family ID and enforced by Postgres Row-Level Security inside Supabase, in addition to checks in our application layer. A bug that bypassed our app code would still be stopped at the database.</li>
+            <li><strong>Calendar API access.</strong> Google Calendar access uses Google's secure OAuth flow with two scopes only &mdash; read events and create/update events on the calendars you connect. We never request broader Google account access, and you can revoke it from Settings.</li>
+            <li><strong>AI processing on Vertex AI.</strong> Bank-statement and bill parsing run on Google Vertex AI (Gemini) on Google Cloud &mdash; not on consumer Gemini or AI Studio. Under Vertex AI's terms, your content is not used to train Google's foundation models and is not retained by Vertex beyond what's needed to return the response for your request.</li>
           </ul>
         </section>
 
