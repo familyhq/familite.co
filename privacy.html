@@ -140,7 +140,7 @@
           importantly—what we <strong>don't</strong> do with it.
         </p>
         <div class="mt-4 p-4 bg-brand-teal/5 rounded-lg border border-brand-teal/15 text-xs brand-muted italic">
-            First Created: March 2026 | Last Updated: April 4, 2026
+            First Created: March 2026 | Last Updated: May 8, 2026
         </div>
       </header>
 
@@ -222,6 +222,30 @@
               </p>
             </div>
             <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
+  <h4 class="font-bold text-gray-900 dark:text-white">2b. Bills (Uploads &amp; Forwarded Emails)</h4>
+  <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+    When you upload a bill PDF or forward a bill email, we store the source file (PDF or email body and any attachments) securely in <strong>Google Cloud Storage</strong>. The source is processed by <strong>Google Vertex AI</strong> (Gemini) to extract a draft bill (amount, due date, payee), which you review, confirm, and edit before saving.
+  </p>
+  <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+    As with bank statements, we do not use your bill documents to train AI models, and Vertex AI does not retain your content after processing. Original PDFs and forwarded email bodies are retained while your account is active so you can reference them; you may request deletion of any uploaded or forwarded bill at any time.
+  </p>
+  <p class="text-gray-600 dark:text-gray-400 text-sm">
+    Recurring or repeated bills are not auto-created on your behalf &mdash; each bill is parsed from a source you provide, and you control whether it is saved.
+  </p>
+</div>
+<div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
+  <h4 class="font-bold text-gray-900 dark:text-white">2c. Bill Email Forwarding</h4>
+  <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+    Each family workspace is assigned an auto-generated forwarding address (for example <code class="font-mono text-xs">bills+&lt;family-id&gt;@familite.co</code>). Emails sent to this address are processed by the same Vertex AI parsing pipeline described in Section 2b.
+  </p>
+  <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+    We retain the sender address, subject, headers, body, and attachments of forwarded emails alongside the parsed draft so you can verify what was extracted. Forwarded emails are scoped to the receiving family workspace only and are not visible to other families.
+  </p>
+  <p class="text-gray-600 dark:text-gray-400 text-sm">
+    Future paid tiers may allow you to customize the forwarding address. Data handling, retention, and deletion rights are unchanged across tiers.
+  </p>
+</div>
+            <div class="border-l-4 border-brand-teal/15 dark:border-brand-teal/30 pl-6">
               <h4 class="font-bold text-gray-900 dark:text-white">3. The Vault (Documents &amp; Links)</h4>
               <p class="text-gray-600 dark:text-gray-400 text-sm">The Vault is <strong>storage-agnostic</strong>. If you upload a file, we store it securely in <strong>Google Cloud Storage</strong>. If you paste a link to iCloud or GDrive, we store only the reference link—we do not scan or read your external cloud accounts.</p>
             </div>
@@ -242,6 +266,9 @@
                 We retain your Google user data only for as long as your account is active or the Google Calendar remains connected. If you disconnect your calendar in settings or delete your Familite account, all synced Google data is immediately and permanently removed from our active databases. You may also request manual data deletion at any time by emailing <strong>privacy@familite.co</strong>.
               </p>
               <p class="text-gray-600 dark:text-gray-400 text-sm italic">Calendar data is used only to provide calendar sync, family visibility, and family scheduling within the Service. We do not sell it or use it for advertising. You can disconnect Calendar in app settings at any time to revoke access.</p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-3">
+  <strong>Planning view:</strong> the Planning page in Familite displays your events, todos, and bills together in a single timeline. It does not introduce new data types beyond those covered in this section and Sections 2b and 2c. Google Calendar sync is governed by the policies above; todos and bills are governed by Sections 2b, 2c, and the data-retention list below.
+</p>
             </div>
           </div>
         </section>
@@ -295,6 +322,8 @@
             <li><strong>Financial PDFs:</strong> Retained in Google Cloud Storage while your account is active. You may request deletion at any time by contacting <strong>privacy@familite.co</strong>.</li>
             <li><strong>Transaction records:</strong> Retained while your account is active. Deleted upon account deletion.</li>
             <li><strong>Vault files &amp; links:</strong> Retained while your account is active. You can delete individual items at any time from within the app.</li>
+            <li><strong>Todos:</strong> Retained while your account is active. You can delete individual todos at any time from within the app.</li>
+            <li><strong>Bills (drafts &amp; saved):</strong> Retained while your account is active. Source PDFs and forwarded emails follow the same retention as Section 2b; you may request deletion of any bill or its source at any time by contacting <strong>privacy@familite.co</strong>.</li>
             <li><strong>Google Calendar data:</strong> Retained while the calendar remains connected. Immediately and permanently removed when you disconnect the calendar or delete your account.</li>
             <li><strong>Analytics data:</strong> Google Analytics data is governed by its retention settings (default: 14 months). PostHog analytics data is retained in accordance with our PostHog configuration and used solely for product improvement.</li>
           </ul>
