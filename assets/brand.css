@@ -244,8 +244,8 @@ h6 {
   align-items: center;
   gap: 0.625rem;
   padding: 0.5rem 0.9rem;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--brand-gray-900);
+  color: var(--brand-gray-50);
   border-radius: 0.625rem;
   border: 1px solid rgb(255 255 255 / 0.18);
   text-decoration: none;
