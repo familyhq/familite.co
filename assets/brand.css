@@ -201,3 +201,86 @@ h6 {
 .shadow-brand-teal-light\/30 {
   --tw-shadow-color: rgb(8 209 208 / 0.3);
 }
+
+/* === Phone frame for mobile screenshots === */
+.brand-phone-frame {
+  position: relative;
+  display: inline-block;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 2.25rem;
+  background-color: var(--brand-gray-900);
+  padding: 0.5rem;
+  box-shadow:
+    0 25px 50px -12px rgb(0 0 0 / 0.35),
+    0 0 0 1px rgb(255 255 255 / 0.04) inset;
+}
+
+.brand-phone-frame > img,
+.brand-phone-frame > .brand-phone-screen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.75rem;
+  object-fit: cover;
+  background-color: var(--brand-gray-800);
+}
+
+/* Empty placeholder (when a real screenshot isn't dropped in yet) */
+.brand-phone-screen--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-gray-400);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, var(--brand-gray-800), var(--brand-gray-700));
+}
+
+/* === App Store / Play Store badges === */
+.brand-app-badge,
+.brand-play-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.9rem;
+  background-color: var(--brand-gray-900);
+  color: var(--brand-gray-50);
+  border-radius: 0.625rem;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  line-height: 1;
+}
+
+.brand-app-badge:hover,
+.brand-play-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -8px rgb(0 0 0 / 0.4);
+}
+
+.brand-app-badge svg,
+.brand-play-badge svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.brand-app-badge .brand-badge-line-1,
+.brand-play-badge .brand-badge-line-1 {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.1rem;
+}
+
+.brand-app-badge .brand-badge-line-2,
+.brand-play-badge .brand-badge-line-2 {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
