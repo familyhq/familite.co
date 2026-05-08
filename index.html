@@ -189,9 +189,9 @@
                 loading="eager"
               />
             </div>
-            <!-- Phone overlapping bottom-right on lg+; stacks below on smaller widths -->
-            <div class="mt-8 lg:mt-0 lg:absolute lg:-right-4 lg:-bottom-12 lg:w-[18%] flex justify-center">
-              <div class="brand-phone-frame w-44 sm:w-52 lg:w-full">
+            <!-- Phone breaking out of the bottom-right on lg+; stacks below on smaller widths -->
+            <div class="mt-8 lg:mt-0 lg:absolute lg:-right-12 lg:-bottom-24 lg:w-[20%] flex justify-center z-20 pointer-events-none">
+              <div class="brand-phone-frame w-44 sm:w-52 lg:w-full pointer-events-auto">
                 <img src="assets/mobile_hero.png" alt="Familite mobile app" loading="lazy" />
               </div>
             </div>
