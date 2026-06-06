@@ -87,6 +87,7 @@
 
       gtag("config", "G-DEE1FN249J");
     </script>
+    <script src="/assets/js/currency-detector.js" defer></script>
   </head>
   <body class="font-sans antialiased brand-body">
     <nav
@@ -211,8 +212,13 @@
           <div class="p-6 sm:p-8 rounded-2xl border brand-soft-card flex flex-col">
             <h2 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Free</h2>
             <p class="text-xs brand-muted mb-6">For trying things out</p>
-            <div class="mb-6">
-              <p class="text-4xl font-bold text-gray-900 dark:text-white">Rp 0</p>
+            <div class="mb-6" data-price-block>
+              <p class="text-4xl font-bold text-gray-900 dark:text-white">
+                <span data-currency="IDR">Rp 0</span>
+                <span data-currency="USD" hidden>$0</span>
+                <span data-currency="EUR" hidden>€0</span>
+                <span data-currency="SGD" hidden>S$0</span>
+              </p>
               <p class="text-xs brand-muted mt-1">with ads</p>
             </div>
             <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-1">
@@ -232,11 +238,19 @@
           <div class="p-6 sm:p-8 rounded-2xl border brand-soft-card flex flex-col">
             <h2 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Plus</h2>
             <p class="text-xs brand-muted mb-6">For growing families</p>
-            <div class="mb-6">
+            <div class="mb-6" data-price-block>
               <p class="text-4xl font-bold text-gray-900 dark:text-white">
-                Rp 49.000<span class="text-base font-normal brand-muted">/mo</span>
+                <span data-currency="IDR">Rp 49.000<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="USD" hidden>$9.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="EUR" hidden>€9.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="SGD" hidden>S$9.99<span class="text-base font-normal brand-muted">/mo</span></span>
               </p>
-              <p class="text-xs brand-muted mt-1">or Rp 449.000/yr</p>
+              <p class="text-xs brand-muted mt-1">
+                <span data-currency="IDR">or Rp 449.000/yr</span>
+                <span data-currency="USD" hidden>or $89/yr</span>
+                <span data-currency="EUR" hidden>or €89/yr</span>
+                <span data-currency="SGD" hidden>or S$89/yr</span>
+              </p>
             </div>
             <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-1">
               <li>5 family members</li>
@@ -257,11 +271,19 @@
             <span class="pricing-ribbon">Most popular</span>
             <h2 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Pro</h2>
             <p class="text-xs brand-muted mb-6">For most households</p>
-            <div class="mb-6">
+            <div class="mb-6" data-price-block>
               <p class="text-4xl font-bold text-gray-900 dark:text-white">
-                Rp 99.000<span class="text-base font-normal brand-muted">/mo</span>
+                <span data-currency="IDR">Rp 99.000<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="USD" hidden>$19.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="EUR" hidden>€19.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="SGD" hidden>S$19.99<span class="text-base font-normal brand-muted">/mo</span></span>
               </p>
-              <p class="text-xs brand-muted mt-1">or Rp 899.000/yr</p>
+              <p class="text-xs brand-muted mt-1">
+                <span data-currency="IDR">or Rp 899.000/yr</span>
+                <span data-currency="USD" hidden>or $179/yr</span>
+                <span data-currency="EUR" hidden>or €179/yr</span>
+                <span data-currency="SGD" hidden>or S$179/yr</span>
+              </p>
             </div>
             <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-1">
               <li>10 family members</li>
@@ -282,11 +304,19 @@
           <div class="p-6 sm:p-8 rounded-2xl border brand-soft-card flex flex-col">
             <h2 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Diamond</h2>
             <p class="text-xs brand-muted mb-6">For extended families</p>
-            <div class="mb-6">
+            <div class="mb-6" data-price-block>
               <p class="text-4xl font-bold text-gray-900 dark:text-white">
-                Rp 199.000<span class="text-base font-normal brand-muted">/mo</span>
+                <span data-currency="IDR">Rp 199.000<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="USD" hidden>$39.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="EUR" hidden>€39.99<span class="text-base font-normal brand-muted">/mo</span></span>
+                <span data-currency="SGD" hidden>S$39.99<span class="text-base font-normal brand-muted">/mo</span></span>
               </p>
-              <p class="text-xs brand-muted mt-1">or Rp 1.790.000/yr</p>
+              <p class="text-xs brand-muted mt-1">
+                <span data-currency="IDR">or Rp 1.790.000/yr</span>
+                <span data-currency="USD" hidden>or $379/yr</span>
+                <span data-currency="EUR" hidden>or €379/yr</span>
+                <span data-currency="SGD" hidden>or S$379/yr</span>
+              </p>
             </div>
             <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 flex-1">
               <li>25 family members</li>
