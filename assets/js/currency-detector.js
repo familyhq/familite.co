@@ -8,8 +8,6 @@
 
   function currencyFromCountry(code) {
     if (code === 'ID') return 'IDR';
-    if (code === 'SG') return 'SGD';
-    if (code === 'US') return 'USD';
     if (EU_CODES.has(code)) return 'EUR';
     return 'USD';
   }
