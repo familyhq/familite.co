@@ -2,4 +2,3 @@ temp/
 .superpowers/*
 .claude/*
 docs/*
-!docs/LANDING_PLAN.md
